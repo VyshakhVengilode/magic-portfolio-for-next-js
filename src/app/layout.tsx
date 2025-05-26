@@ -12,11 +12,11 @@ import { Meta } from "@/once-ui/modules";
 
 export async function generateMetadata() {
   return Meta.generate({
+    image: home.image,
     title: home.title,
     description: home.description,
     baseURL: baseURL,
-    path: home.path,
-    image: home.image,
+    path: home.path,    
   });
 }
 

@@ -1,6 +1,6 @@
 'use client';
 
-export default function WorkPage() {
+export default function PublicationsPage() {
   return (
     <div
       className="text-white flex flex-col items-center px-4 py-10"
@@ -12,19 +12,19 @@ export default function WorkPage() {
       }}
     >
       {/* Header */}
-      <h1 className="text-4xl font-extrabold text-center mb-2 tracking-tight">My Work</h1>
+      <h1 className="text-4xl font-extrabold text-center mb-2 tracking-tight">Publications</h1>
       <p className="text-lg text-gray-300 text-center mb-8 max-w-xl">
-        This page will showcase projects and professional experience.
+        Explore my published writeups from around the web on this page
       </p>
       <p className="text-lg text-gray-300 text-center mb-8 max-w-xl">
-         You can view my portfolio blog by visiting{' '}
+         Check out my writeups at{' '}
       <a
-        href="https://artistrydesigndiaries.blogspot.com/" 
+        href="https://www.hopp.bio/vyshakhvengilode" 
         target="_blank"
         rel="noopener noreferrer"
         style={{ color: '#2367ff' }}
       >
-        Artistry
+        Bio.Link
      </a>.
     </p>
 
@@ -41,8 +41,8 @@ export default function WorkPage() {
         }}
       >
         <iframe
-          src="https://artistrydesigndiaries.blogspot.com/"
-          title="Artistry Design Diaries"
+          src="https://www.hopp.bio/vyshakhvengilode"
+          title="BioLink"
           loading="lazy"
           allowFullScreen
           style={{

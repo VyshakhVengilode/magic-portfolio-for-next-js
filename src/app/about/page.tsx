@@ -40,11 +40,6 @@ export default function About() {
       items: about.work.experiences.map((experience) => experience.company),
     },
     {
-      title: about.studies.title,
-      display: about.studies.display,
-      items: about.studies.institutions.map((institution) => institution.name),
-    },
-    {
       title: about.technical.title,
       display: about.technical.display,
       items: about.technical.skills.map((skill) => skill.title),
@@ -245,27 +240,6 @@ export default function About() {
               </Column>
             </>
           )}
-
-          {about.studies.display && (
-            <>
-              <Heading as="h2" id={about.studies.title} variant="display-strong-s" marginBottom="m">
-                {about.studies.title}
-              </Heading>
-              <Column fillWidth gap="l" marginBottom="40">
-                {about.studies.institutions.map((institution, index) => (
-                  <Column key={`${institution.name}-${index}`} fillWidth gap="4">
-                    <Text id={institution.name} variant="heading-strong-l">
-                      {institution.name}
-                    </Text>
-                    <Text variant="heading-default-xs" onBackground="neutral-weak">
-                      {institution.description}
-                    </Text>
-                  </Column>
-                ))}
-              </Column>
-            </>
-          )}
-
           {about.technical.display && (
             <>
               <Heading

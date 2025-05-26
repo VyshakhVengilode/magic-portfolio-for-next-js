@@ -15,6 +15,7 @@ export {
   newsletter,
   home,
   about,
+  publications,
   blog,
   work,
   gallery,

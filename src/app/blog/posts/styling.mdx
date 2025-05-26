@@ -1,82 +1,55 @@
 ---
-title: "Styling your portfolio"
-summary: "Magic Portfolio's styling is based on Once UI's customization through data-attributes."
-publishedAt: "2025-04-21"
-tag: "Magic Portfolio"
+title: "AI Sparks Creativity in Images, Videos, Animations & Sound!"
+summary: "Exploring AI Platforms for Creative Media"
+image: "/images/projects/project-01/blog-3.jpg"
+publishedAt: "2025-04-22"
+team:
+  - name: "Vyshakh Vengilode"
+    role: "Author"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/vyshakhvengilode/"
+tag: "Design with coding"
 ---
+Artificial Intelligence (AI) is transforming creative industries by enabling innovative tools for generating images, animations, videos, motion designs, audio, and web-based animations like Lottie. Below, we explore the types of AI driving these advancements and their applications.
 
-## Global style
+## 1. AI in Image Generation
 
-Magic Portfolio's styling is based on Once UI's customization through data-attributes. You can generate a custom color palette for brand, accent and neutral colors on [Once UI](https://once-ui.com/customize) where you'll find instructions on how to apply it.
+AI-powered image generation uses **Generative Adversarial Networks (GANs)**, **Diffusion Models**, and **Variational Autoencoders (VAEs)** to create stunning visuals from text prompts or reference images. Tools like **Stable Diffusion**, **DALL·E**, and **MidJourney** leverage diffusion models to produce photorealistic or artistic images, enabling creators to generate artwork, concept designs, or marketing visuals effortlessly.
 
-<CodeBlock
-    marginBottom="16"
-    codeInstances={[
-  {
-    code:
-`theme:       'dark',         // dark | light
-neutral:     'gray',         // sand | gray | slate
-brand:       'blue',         // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-accent:      'indigo',       // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-solid:       'contrast',     // color | contrast
-solidStyle:  'flat',         // flat | plastic
-border:      'playful',      // rounded | playful | conservative
-surface:     'translucent',  // filled | translucent
-transition:  'all',          // all | micro | macro
-scaling:     '100',          // 90 | 95 | 100 | 105 | 110`, 
-    language: "tsx",
-    label: "src/app/resources/config.js"
-  }
-]} />
+Applications: Digital art, graphic design, product mockups, and photo editing.
 
-## Background effect
+## 2. AI in Animation
 
-There's a pre-configured background in `layout.tsx` that you can modify in the config file. Set graphic elements such as gradient, dots, lines, and grid and configure their appearance.
+AI animation tools employ neural networks and motion capture algorithms to automate character animation and frame interpolation. Technologies like **Deep Learning-based rigging** and **auto-keyframing** (e.g., **Adobe Character Animator**) use AI to simplify complex animation workflows. AI also enhances 2D and 3D animation by predicting movements and generating in-between frames.
 
-<CodeBlock
-    codeHeight={24}
-    marginBottom="16"
-    codeInstances={[
-  {
-    code:
-`const effects = {
-    mask: {
-      cursor: false,
-      x: 50,
-      y: 0,
-      radius: 100
-    },
-    gradient: {
-      display: true,
-      x: 50,
-      y: -25,
-      width: 100,
-      height: 100,
-      tilt: 0,
-      colorStart: 'accent-background-strong',
-      colorEnd: 'static-transparent',
-      opacity: 50
-    },
-    dots: {
-      display: true,
-      size: 2,
-      color: 'brand-on-background-weak',
-      opacity: 20
-    },
-    lines: {
-      display: false,
-      color: 'neutral-alpha-weak',
-      opacity: 100
-    },
-    grid: {
-      display: false,
-      color: 'neutral-alpha-weak',
-      opacity: 100,
-      width: 'var(--static-space-32)',
-      height: 'var(--static-space-32)'
-    }
-}`, 
-    language: "tsx",
-    label: "src/app/resources/config.js"
-  }
-]} />
+Applications: Character animations for films, games, and short-form content.
+
+## 3. AI in Video Generation
+
+Video generation AI, powered by **text-to-video models** (e.g., **Runway**, **Sora**) and **video diffusion models**, creates short clips or full-length videos from text or image inputs. These models use temporal coherence algorithms to ensure smooth transitions between frames. AI can also upscale videos, stabilize shaky footage, or generate realistic deepfakes using GANs.
+
+Applications: Video ads, social media content, and film pre-visualization.
+
+## 4. AI in Motion Design
+
+Motion design AI tools use procedural generation and machine learning to create dynamic visuals for branding, UI/UX, or presentations. Platforms like **Haiku** and **Motionity** leverage AI to automate transitions, particle effects, and kinetic typography, reducing manual keyframing.
+
+Applications: Title sequences, explainer videos, and interactive media.
+
+## 5. AI in Audio Generation
+
+AI audio generation relies on **neural audio synthesis** (e.g., **WaveNet**, **Jukebox**) and **text-to-speech (TTS)** models to produce music, sound effects, or voiceovers. These systems analyze audio patterns to create realistic instrumentals or human-like voices, with tools like Descript and ElevenLabs leading the way.
+
+Applications: Podcast production, music composition, and sound design for games.
+
+## 6. AI in Lottie-Type Web Motion Animation
+
+Lottie animations, lightweight vector-based animations for web and mobile, are enhanced by AI through automated motion design tools. AI-driven platforms like **Animaker** or **LottieFiles’** plugins use motion prediction algorithms and keyframe interpolation to generate smooth, scalable animations from simple inputs, optimized for web performance.
+
+Applications: Website UI animations, mobile app transitions, and interactive infographics.
+
+## The Future of AI in Creative Media
+
+AI is democratizing creativity, enabling both professionals and amateurs to produce high-quality content efficiently. As models evolve, we can expect even more seamless integration of AI in creative workflows, pushing the boundaries of imagination.
+
+**Get Started**: Explore tools like Stable Diffusion for images, Runway for videos, or LottieFiles for web animations to unleash your creative potential!

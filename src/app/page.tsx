@@ -21,6 +21,9 @@ export async function generateMetadata() {
 export default function Home() {
   return (
     <Column maxWidth="m" gap="xl" horizontal="center">
+      <RevealFx translateY="16" delay={0.6}>
+        <Projects range={[1, 1]} />
+      </RevealFx>
       <Schema
         as="webPage"
         baseURL={baseURL}
@@ -77,9 +80,6 @@ export default function Home() {
           </RevealFx>
         </Column>
       </Column>
-      <RevealFx translateY="16" delay={0.6}>
-        <Projects range={[1, 1]} />
-      </RevealFx>
       {routes["/blog"] && (
         <Flex fillWidth gap="24" mobileDirection="column">
           <Flex flex={1} paddingLeft="l" paddingTop="24">

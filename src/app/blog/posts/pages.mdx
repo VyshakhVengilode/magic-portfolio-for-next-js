@@ -1,55 +1,55 @@
 ---
-title: "Enable or disable pages for your portfolio"
-summary: "Magic Portfolio's RouteGuard component takes care of conditionally rendering pages based on your settings."
+title: "Boost Your Design Speed with Photoshop & Illustrator Coding!"
+summary: "Learn how simple coding in Photoshop and Illustrator can automate tasks and make your design work faster and smarter."
+image: "/images/projects/project-01/blog-2.jpg"
 publishedAt: "2025-04-22"
-tag: "Magic Portfolio"
+team:
+  - name: "Vyshakh Vengilode"
+    role: "Author"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/vyshakhvengilode/"
+tag: "Design with coding"
 ---
+For many, Adobe Photoshop and Illustrator are synonymous with creativity and visual excellence. But behind the layers, brushes, and vectors, there’s a powerful capability that often goes underused—scripting and coding!
 
-## Enable or disable pages
+## What Does "Coding" Mean in Design Tools?
 
-Magic Portfolio's `RouteGuard` component takes care of conditionally rendering pages based on the `routes` object in the `resources/config.js` file.
+Both Photoshop and Illustrator support scripting using JavaScript (ExtendScript), which allows designers to automate tasks, manipulate layers or paths, and even generate dynamic content. Think of it as a way to supercharge your workflow.
 
-<CodeBlock
-    marginBottom="16"
-    highlight="6"
-    codeInstances={[
-  {
-    code:
-`const routes = {
-    '/':        true,
-    '/about':   true,
-    '/work':    true,
-    '/blog':    true,
-    '/gallery': false,
-};`,
-    language: "tsx",
-    label: "src/app/resources/config.js"
-  }
-]} />
+## Real-World Examples
 
-The code above will ensure that the `/gallery` page is not accessible and is not displayed in the navigation.
+**1.** **Batch Resizing and Exporting in Photoshop**  
+Imagine you have 200 product images that need to be resized and saved in multiple formats. Instead of doing it manually, a simple script can automate the entire process:
 
-## Add new pages
+```javascript
+var files = Folder.selectDialog("Select a folder of images");
+var output = new Folder("~/Desktop/Resized");
 
-When creating a new page, it needs to be added to the `routes` object in the `resources/config.js` file.
+if (!output.exists) output.create();
 
-<CodeBlock
-    marginBottom="16"
-    highlight="6"
-    codeInstances={[
-  {
-    code:
-`const routes = {
-    '/':        true,
-    '/about':   true,
-    '/work':    true,
-    '/blog':    true,
-    '/gallery': false,
-    '/music': true,
-};`,
-    language: "tsx",
-    label: "src/app/resources/config.js"
-  }
-]} />
+var files = files.getFiles("*.jpg");
+for (var i = 0; i < files.length; i++) {
+    var doc = open(files[i]);
+    doc.resizeImage(800, 800);
+    var saveFile = new File(output + "/" + doc.name);
+    doc.saveAs(saveFile, new JPEGSaveOptions(), true);
+    doc.close(SaveOptions.DONOTSAVECHANGES);
+}
+```
 
-The code above will ensure that the `/music` page is accessible. Users will be able to navigate to it after adding it to the navigation menu in the `components/Header.tsx` file.
+**2.** **Auto-generating Business Cards in Illustrator**  
+If you have a spreadsheet of names and titles, you can write a script to populate a business card template automatically. No need to manually enter each name—just let the code do the work.
+
+**3.** **Dynamic Pattern Creation**  
+You can write a script in Illustrator to generate patterns or layouts based on mathematical functions or data, useful in generative art or data-driven design projects.
+
+## Benefits of Coding in Design
+
+- **Speed:** Tasks that take hours can be done in minutes.
+- **Consistency:** Automated processes reduce human error.
+- **Scalability:** Easily handle hundreds or thousands of assets.
+- **Customization:** Tailor tools and processes to your specific needs.
+
+## Getting Started
+
+Adobe provides documentation for scripting in both Photoshop and Illustrator, and tools like the ExtendScript Toolkit (or Visual Studio Code with the proper extension) help with writing and debugging scripts. Start with simple automations, and soon you'll be unlocking a new level of efficiency in your creative process!

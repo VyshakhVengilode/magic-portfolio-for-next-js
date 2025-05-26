@@ -1,71 +1,52 @@
 ---
-title: "Create, edit and delete blog posts"
-summary: "Create, edit and delete posts in the blog section of your Magic Portfolio."
-publishedAt: "2025-03-17"
-tag: "Magic Portfolio"
+title: "The Psychology of Shapes and Colors in Design"
+summary: "Exploring How Geometrical Shapes and Colors Influence the Human Psyche"
+image: "/images/projects/project-01/psyclr.jpg"
+publishedAt: "2025-05-01"
+team:
+  - name: "Vyshakh Vengilode"
+    role: "Author"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/vyshakhvengilode/"
+tag: "Psychology of Art"
 ---
+Shapes and colors are fundamental elements of design that do more than just fill space—they speak to the human psyche, evoking emotions, conveying messages, and influencing behavior. Rooted in psychological principles, the interplay of geometrical shapes and colors shapes how we perceive and interact with the world. This blog explores the psychology of shapes, how they affect the human mind, and how colors amplify these effects to create powerful visual communication.
 
-## Manage posts
+## Shapes and the Human Psyche
+Shapes are not just visual forms; they carry psychological weight that influences how we feel and think. The human brain instinctively associates specific geometrical shapes with emotions, ideas, and behaviors, a concept rooted in Gestalt psychology, which explains how we perceive forms as meaningful wholes. Below, we delve into the psychological impact of common shapes.
 
-You can create, edit and delete posts by adding, modifying or removing `*.mdx` files in the `src/app/blog/posts` directory.
+## Circles: Unity and Harmony
+Circles evoke feelings of unity, wholeness, and harmony due to their continuous, unbroken form. Lacking sharp edges, they feel soft, approachable, and inclusive, often symbolizing community, eternity, or protection. In design, circles are used in logos (e.g., Target, Olympics) to convey friendliness and trust. Psychologically, they draw viewers in, creating a sense of comfort and connection, making them ideal for brands aiming to foster loyalty or inclusivity.
 
-## Frontmatter
+## Squares and Rectangles: Stability and Trust
+Squares and rectangles, with their equal sides or structured proportions, symbolize stability, order, and reliability. Their straight lines and right angles suggest strength and predictability, appealing to our desire for structure. In design, these shapes are common in layouts, grids, and corporate branding (e.g., Microsoft, National Geographic) to convey professionalism and trustworthiness. Psychologically, they provide a sense of grounding, making viewers feel secure and organized.
 
-The frontmatter is used to set the post's metadata: title, description, image, and tags. It's used in the post's page and in meta- and open graph tags.
+## Triangles: Energy and Direction
+Triangles are dynamic shapes that convey movement, energy, and direction. Their pointed edges and angled lines suggest action or progression, with orientation affecting perception—upward triangles imply aspiration and growth, while downward ones can signal caution or stability. Used in logos like Adidas or warning signs, triangles grab attention and evoke excitement or alertness. Psychologically, they stimulate action and focus, making them effective for dynamic or innovative designs.
 
-<CodeBlock
-    marginBottom="16"
-    codeInstances={[
-      {
-        code:
-`---
-title: "Arriving to a new milestone in my career"
-publishedAt: "2024-04-08"
-image: "/images/gallery/img-02.jpg"
-summary: "Every career is a journey, filled with challenges, growth, and those significant moments that mark a shift in our path."
-tag: "Journal"
----`,
-        language: "tsx",
-        label: "src/app/blog/posts/post-1.mdx"
-      }
-    ]}
-/>
+## Organic Shapes: Creativity and Comfort
+Organic, irregular shapes, inspired by nature (e.g., curves, blobs), feel spontaneous, creative, and human. Unlike rigid geometric forms, they evoke warmth, individuality, and approachability, often used in playful or artistic designs (e.g., abstract art, hand-drawn logos). Psychologically, organic shapes reduce stress and foster creativity, appealing to viewers’ emotions and encouraging a relaxed, open mindset.
 
-## MDX syntax
+## How Colors Work with the Psyche
+Color psychology complements the emotional impact of shapes, amplifying their effect on the human psyche. Colors influence mood, perception, and behavior, as formalized by 18th-century theories from figures like Isaac Newton and Johann Wolfgang von Goethe. When paired with shapes, colors create a synergistic effect, enhancing the intended message.
 
-You can use MDX to write the content of your posts. It helps you write rich and dynamic content with minimal code. Some MDX elements will be automatically transformed to Once UI components to integrate better in the design and add additional functionality.
+## Red: Passion and Urgency
+Red is a high-energy color associated with passion, excitement, and urgency. When paired with triangles, it amplifies their dynamic nature, creating a sense of action (e.g., warning signs). With circles, red softens into warmth and love, as seen in heart-shaped logos. Psychologically, red stimulates the nervous system, increasing heart rate and grabbing attention, making it ideal for calls-to-action or bold branding.
 
-## Custom components
+## Blue: Calm and Trust
+Blue evokes calmness, trust, and professionalism, often paired with squares or rectangles to enhance their stability (e.g., corporate logos like IBM). With circles, blue reinforces feelings of community and serenity. Psychologically, blue lowers stress and promotes reliability, making it a favorite for tech and healthcare brands seeking to build trust.
 
-You can use custom components in MDX files, but you need to import them first in the `src/components/mdx.tsx` file.
+## Yellow: Optimism and Energy
+Yellow radiates optimism, creativity, and warmth, often used with organic shapes to boost their playful, approachable vibe. When paired with triangles, yellow heightens their energetic appeal, suggesting innovation (e.g., caution signs). Psychologically, yellow stimulates mental activity and draws attention, but overuse can cause anxiety, so it’s best balanced with calming shapes or colors.
 
-<CodeBlock
-    marginBottom="16"
-    highlight="11-12"
-    codeInstances={[
-      {
-        code:
-`const components = {
-    p: createParagraph as any,
-    h1: createHeading(1) as any,
-    h2: createHeading(2) as any,
-    h3: createHeading(3) as any,
-    h4: createHeading(4) as any,
-    h5: createHeading(5) as any,
-    h6: createHeading(6) as any,
-    img: createImage as any,
-    a: CustomLink as any,
-    Table,
-    CodeBlock,
-};`,
-        language: "tsx",
-        label: "src/components/mdx.tsx"
-      }
-    ]}
-/>
+## Green: Growth and Balance
+Green symbolizes growth, nature, and balance, aligning well with organic shapes to evoke environmental friendliness or health. With circles, it enhances feelings of harmony, as seen in eco-friendly brand logos. Psychologically, green soothes and promotes well-being, making it effective for wellness or sustainability-focused designs.
 
-As you can see, the `Table` and `CodeBlock` components are already imported and available for use. You can add more by simply importing them to this file and passing them to the `components` object.
+## Black and White: Neutrality and Contrast
+Black conveys sophistication, power, or mystery, while white suggests purity and simplicity. When used with squares, black reinforces authority (e.g., luxury branding), while white with circles feels clean and minimalistic. Psychologically, black adds weight and focus, while white creates openness, and their high contrast with shapes ensures clarity and visual impact.
 
-## Hot reload
+## The Synergy of Shapes and Colors
+The combination of shapes and colors creates a powerful psychological effect. For example, a red triangle in a warning sign leverages the urgency of red and the alertness of triangles to demand attention. A blue circle in a healthcare logo combines trust and unity for a calming, reliable impression. Designers use this synergy to align visuals with intended emotions, ensuring messages resonate with audiences. Cultural contexts also play a role—red may signify luck in some cultures but danger in others, while circles may symbolize divinity or community depending on the region.
 
-Hot reload of MDX files is currently not supported, but we're working on it.
+## Wrap-Up
+The psychology of shapes and colors is a cornerstone of effective graphic design, enabling designers to craft visuals that evoke specific emotions and behaviors. Shapes like circles, squares, triangles, and organic forms carry inherent psychological meanings, amplified by colors like red, blue, yellow, green, black, and white. By understanding and applying these principles, designers create impactful work that communicates across cultures and contexts, resonating deeply with the human psyche.

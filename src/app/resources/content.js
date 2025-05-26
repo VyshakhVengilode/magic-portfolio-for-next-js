@@ -1,46 +1,52 @@
 import { Logo } from "@/once-ui/components";
+import React from "react";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Vyshakh",
+  lastName: "Vengilode",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Graphic Designer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "vyshakhvengilode@gmail.com",
+  location: "Asia/Kolkata", // IANA time zone identifier for India
+  languages: ["English", "Malayalam"], // optional: Leave the array empty if you don't want to display languages
 };
+const NewsletterTitle = () => (
+  <>Subscribe to {person.firstName}'s Newsletter</>
+);
+
+const NewsletterDescription = () => (
+  <>
+    I occasionally write about design, technology, and share thoughts on the intersection of
+    creativity and engineering.
+  </>
+);
 
 const newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: (
-    <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
-    </>
-  ),
+  title: <NewsletterTitle />,
+  description: <NewsletterDescription />,
 };
 
 const social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
   {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    name: "BioLink",
+    icon: "SiBiolink",
+    link: "https://www.hopp.bio/vyshakhvengilode",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/vyshakhvengilode/",
   },
   {
     name: "X",
     icon: "x",
-    link: "",
+    link: "https://x.com/vyshakhvengilod",
   },
   {
     name: "Email",
@@ -55,16 +61,16 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Breathing Life through Design’s Pulse</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    title: <>Recent project: <strong className="ml-4">Naari</strong></>,
+    href: "/work/naari-cover",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+     I’m Vyshakh, a poet of pixels and dreams.
+      <br /> I sculpt intuitive worlds that captivate.
     </>
   ),
 };
@@ -90,9 +96,10 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        I’m Vyshakh Vengilode (P), a Kannur-based graphic designer. I craft impactful visuals
+      for branding, UI, and social media, blending creativity with strategy.
+      My work transforms complex ideas into engaging designs.
+  I’m passionate about storytelling through visuals that resonate.
       </>
     ),
   },
@@ -101,23 +108,39 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Apollo Medical Laboratory",
+        timeframe: "2024 - Present",
+        role: "Graphic Designer/Digital Marketing & Media Specialist",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Developed compelling social media content for Apollo Medical Laboratory and Apollo Clinic, Kannur,
+            enhancing online presence and brand engagement.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Designed posters, flyers, standees, program backdrops, and banners for marketing campaigns, aligning
+            with brand identity and objectives.
+          </>,
+          <>
+            Crafted building name boards and light boards to boost visual appeal and brand visibility for
+            Apollo’s facilities.
+          </>,
+          <>
+            Utilized Adobe Photoshop, Illustrator, and AI tools to create high-quality,
+            impactful graphics for digital and print media, incorporating market trends.
+          </>,
+          <>
+            Produced storytelling-driven designs that resonated with audiences,
+            improving client interaction and campaign effectiveness.
+          </>,
+          <>
+            Collaborated with teams to ensure designs met strategic goals, contributing to
+            enhanced brand visibility and engagement.
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
+            src: "/images/projects/project-01/apollo.jpg",
             alt: "Once UI Project",
             width: 16,
             height: 9,
@@ -125,34 +148,42 @@ const about = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Whiz Info Systems",
+        timeframe: "2018 - 2024",
+        role: "Graphic Designer/UI Designer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Designed over 100 logos and brochures, achieving 95% client satisfaction
+            with enhanced brand identity.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Crafted intuitive software and mobile UI designs, improving user experience
+            and client alignment.
+          </>,
+          <>
+            Produced compelling social media graphics, driving brand engagement and visibility.
+          </>,
+          <>
+            Delivered tailored marketing materials using Adobe Photoshop, Illustrator, InDesign,
+            and After Effects, meeting client goals.
+          </>,
+          <>
+            Streamlined design workflows with AI tools, ensuring high-quality outputs
+            under tight deadlines.
+          </>,
+          <>
+            Collaborated with clients to create strategic design solutions,
+            boosting project success rates.
           </>,
         ],
-        images: [],
-      },
-    ],
-  },
-  studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
-    institutions: [
-      {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        images: [
+          {
+            src: "/images/projects/project-01/whiz.jpg",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
     ],
   },
@@ -161,18 +192,18 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "AI Prompt Engineering",
+        description: <>Proficient in prompting AI tools to generate high-quality, impactful images and videos.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
+            src: "/images/projects/project-01/ai.jpg",
             alt: "Project image",
             width: 16,
             height: 9,
           },
           {
-            src: "/images/projects/project-01/cover-03.jpg",
+            src: "/images/projects/project-01/ai-1.jpg",
             alt: "Project image",
             width: 16,
             height: 9,
@@ -180,20 +211,20 @@ const about = {
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        title: "Adobe Creative Suite",
+        description: <>Skilled in Adobe Creative Suite for creating impactful graphics, and digital content.</>,
         // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
     ],
   },
+};
+
+const publications = {
+  path: "/publications",
+  label: "Publications",
+  title: `Projects – ${person.name}`,
+  description: `Writeups by ${person.name}`,
 };
 
 const blog = {
@@ -265,4 +296,4 @@ const gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, newsletter, home, about, publications, blog, work, gallery };
