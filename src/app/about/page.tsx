@@ -316,7 +316,7 @@ export default function About() {
                     key={idx}
                     fillWidth
                     gap="2"
-                    marginBottom="s"
+                    marginBottom="8"
                   >
                     <Text
                       variant="heading-strong-m"
