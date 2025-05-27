@@ -334,6 +334,100 @@ export default function About() {
                   </Column>
                 ))}
               </Column>
+{/* SHORT STORIES SECTION */}
+{about.shortstorySection && (
+  <>
+    <div style={{ marginTop: 40 }} />
+    <Heading
+      as="h2"
+      id={about.shortstorySection.subtitle}
+      variant="display-strong-s"
+      marginBottom="8"
+    >
+      {about.shortstorySection.subtitle}
+    </Heading>
+    <Column fillWidth gap="l">
+      {about.shortstorySection.sections.map((section, idx) => (
+        <Column key={idx} fillWidth gap="2" marginBottom="1">
+          <Text variant="heading-strong-m" marginBottom="xs">
+            {section.subtitle}
+          </Text>
+          <ul style={{ margin: 0, paddingLeft: 20 }}>
+            {section.entries.map((entry, i) => (
+              <li key={i} style={{ marginBottom: 2 }}>
+                <Text variant="body-default-m">{entry.content}</Text>
+              </li>
+            ))}
+          </ul>
+        </Column>
+      ))}
+    </Column>
+  </>
+)}
+
+{/* POEMS SECTION */}
+{about.poemsSection && (
+  <>
+    <div style={{ marginTop: 40 }} />
+    <Heading
+      as="h2"
+      id={about.poemsSection.subtitle}
+      variant="display-strong-s"
+      marginBottom="8"
+    >
+      {about.poemsSection.subtitle}
+    </Heading>
+    <Column fillWidth gap="l">
+      {about.poemsSection.sections.map((section, idx) => (
+        <Column key={idx} fillWidth gap="2" marginBottom="1">
+          <Text variant="heading-strong-m" marginBottom="xs">
+            {section.subtitle}
+          </Text>
+          <ul style={{ margin: 0, paddingLeft: 20 }}>
+            {section.entries.map((entry, i) => (
+              <li key={i} style={{ marginBottom: 2 }}>
+                <Text variant="body-default-m">{entry.content}</Text>
+              </li>
+            ))}
+          </ul>
+        </Column>
+      ))}
+    </Column>
+  </>
+)}
+
+{/* PREPRINTS SECTION */}
+{about.preprintSection && (
+  <>
+    <div style={{ marginTop: 40 }} />
+    <Heading
+      as="h2"
+      id={about.preprintSection.subtitle}
+      variant="display-strong-s"
+      marginBottom="8"
+    >
+      {about.preprintSection.subtitle}
+    </Heading>
+    <Column fillWidth gap="l">
+      {about.preprintSection.sections.map((section, idx) => (
+        <Column key={idx} fillWidth gap="2" marginBottom="1">
+          {section.subtitle && (
+            <Text variant="heading-strong-m" marginBottom="xs">
+              {section.subtitle}
+            </Text>
+          )}
+          <ul style={{ margin: 0, paddingLeft: 20 }}>
+            {section.entries.map((entry, i) => (
+              <li key={i} style={{ marginBottom: 2 }}>
+                <Text variant="body-default-m">{entry.content}</Text>
+              </li>
+            ))}
+          </ul>
+        </Column>
+      ))}
+    </Column>
+  </>
+)}
             </>
           )}
         </Column>
