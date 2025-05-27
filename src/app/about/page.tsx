@@ -288,8 +288,37 @@ export default function About() {
               </Column>
             </>
           )}
-        </Column>
-      </Flex>
+             {about.publicationsSection && (
+                <>
+                  <Heading
+                      as="h2"
+                        id={about.publicationsSection.title}
+                          variant="display-strong-s"
+                            marginBottom="40"
+                            >
+                            {about.publicationsSection.title}
+                            </Heading>
+                            <Text variant="heading-default-s" marginBottom="l" onBackground="neutral-weak">
+                            {about.publicationsSection.subtitle}
+                            </Text>
+                            <Column fillWidth gap="l">
+                            {about.publicationsSection.sections.map((section, idx) => (
+                            <Column key={idx} fillWidth gap="4" marginBottom="xl">
+                            <Text variant="heading-strong-m" marginBottom="s">{section.subtitle}</Text>
+                            <ul style={{ margin: 0, paddingLeft: 20 }}>
+                            {section.entries.map((entry, i) => (
+                            <li key={i} style={{ marginBottom: 8 }}>
+                            <Text variant="body-default-m">{entry.content}</Text>
+                            </li>
+                          ))}
+                      </ul>
+                 </Column>
+                ))}
+         </Column>
+       </>
+    )}
+    </Column>
+    </Flex>
     </Column>
   );
 }
