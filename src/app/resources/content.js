@@ -61,7 +61,7 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Vyshakh Vengilode's Creative Portfolio</>,
+  headline: <>Vyshakh Vengilode's Portfolio</>,
   featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">Naari</strong></>,
@@ -69,8 +69,7 @@ const home = {
   },
   subline: (
     <>
-     Explore My Creative Journey:
-      <br /> Designs, Writings, and Software Creations.
+     Portfolio website showcasing my work as a Graphic Designer | Writer | Developer
     </>
   ),
 };
