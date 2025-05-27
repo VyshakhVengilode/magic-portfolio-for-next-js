@@ -299,7 +299,7 @@ export default function About() {
                 as="h2"
                 id={about.publicationsSection.title}
                 variant="display-strong-s"
-                marginBottom="s"
+                marginBottom="8"
               >
                 {about.publicationsSection.title}
               </Heading>
