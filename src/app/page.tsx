@@ -37,12 +37,19 @@ export default function Home() {
           image: `${baseURL}${person.avatar}`,
         }}
       />
-<Column fillWidth paddingY="24" gap="m">
-  <Column maxWidth="s">
+<Column fillWidth paddingY="24" gap="m" horizontal="center">
+  <Column fillWidth horizontal="center">
     {home.featured && (
       <RevealFx fillWidth horizontal="center" paddingTop="16" paddingBottom="32">
-        <Badge background="brand-alpha-weak" paddingX="12" paddingY="4" onBackground="neutral-strong" textVariant="label-default-s" arrow={false}
-          href={home.featured.href}>
+        <Badge
+          background="brand-alpha-weak"
+          paddingX="12"
+          paddingY="4"
+          onBackground="neutral-strong"
+          textVariant="label-default-s"
+          arrow={false}
+          href={home.featured.href}
+        >
           <Row paddingY="2">{home.featured.title}</Row>
         </Badge>
       </RevealFx>
