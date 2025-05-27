@@ -7,7 +7,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Graphic Designer",
+  role: "Graphic Designer | Writer | Developer",
   avatar: "/images/avatar.jpg",
   email: "vyshakhvengilode@gmail.com",
   location: "Asia/Kolkata", // IANA time zone identifier for India
