@@ -231,7 +231,7 @@ const about = {
 
   publicationsSection: {
     title: "Publications",
-    subtitle: "Articles (Science, Psychology, Politics, Philosophy)",
+    subtitle: "Articles (Science and Psychology, Politics and Philosophy)",
     sections: [
       {
         subtitle: "1) LUCA (Kerala Shasthra Sahithya Parishat)",
