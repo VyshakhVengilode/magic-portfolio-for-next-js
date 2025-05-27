@@ -1,4 +1,5 @@
 import { IconType } from "react-icons";
+import { SiBiolink } from "react-icons/si";
 
 import {
   HiChevronUp,
@@ -36,7 +37,7 @@ import {
   PiImageDuotone,
 } from "react-icons/pi";
 
-import { FaDiscord, FaGithub, FaLinkedin, FaX } from "react-icons/fa6";
+import { FaDiscord, FaGithub, FaLinkedin, FaX, FaPenNib } from "react-icons/fa6";
 
 export const iconLibrary: Record<string, IconType> = {
   chevronUp: HiChevronUp,
@@ -62,10 +63,12 @@ export const iconLibrary: Record<string, IconType> = {
   calendar: HiCalendarDays,
   home: PiHouseDuotone,
   gallery: PiImageDuotone,
+  publications: FaPenNib,
   discord: FaDiscord,
   eye: HiOutlineEye,
   eyeOff: HiOutlineEyeSlash,
-  github: FaGithub,
+  github: SiBiolink,
+  SiBiolink: SiBiolink,
   linkedin: FaLinkedin,
   x: FaX,
   clipboard: HiClipboard,
