@@ -320,13 +320,13 @@ export default function About() {
                   >
                     <Text
                       variant="heading-strong-m"
-                      marginBottom="s"
+                      marginBottom="xs"
                     >
                       {section.subtitle}
                     </Text>
                     <ul style={{ margin: 0, paddingLeft: 20 }}>
                       {section.entries.map((entry, i) => (
-                        <li key={i} style={{ marginBottom: 1 }}>
+                        <li key={i} style={{ marginBottom: 2 }}>
                           <Text variant="body-default-m">{entry.content}</Text>
                         </li>
                       ))}
