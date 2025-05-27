@@ -20,7 +20,7 @@ export async function generateMetadata() {
 
 export default function Home() {
   return (
-    <Column maxWidth="m" gap="0.3" horizontal="center">
+    <Column maxWidth="m" gap="xxs" horizontal="center">
       <RevealFx translateY="16" delay={0.6}>
         <Projects range={[1, 1]} />
       </RevealFx>
