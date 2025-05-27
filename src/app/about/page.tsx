@@ -316,17 +316,17 @@ export default function About() {
                     key={idx}
                     fillWidth
                     gap="2"
-                    marginBottom="16"
+                    marginBottom="m"
                   >
                     <Text
                       variant="heading-strong-m"
-                      marginBottom="6"
+                      marginBottom="s"
                     >
                       {section.subtitle}
                     </Text>
                     <ul style={{ margin: 0, paddingLeft: 20 }}>
                       {section.entries.map((entry, i) => (
-                        <li key={i} style={{ marginBottom: 2 }}>
+                        <li key={i} style={{ marginBottom: xs }}>
                           <Text variant="body-default-m">{entry.content}</Text>
                         </li>
                       ))}
