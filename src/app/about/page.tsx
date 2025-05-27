@@ -299,13 +299,13 @@ export default function About() {
                 as="h2"
                 id={about.publicationsSection.title}
                 variant="display-strong-s"
-                marginBottom="24"
+                marginBottom="12"
               >
                 {about.publicationsSection.title}
               </Heading>
               <Text
                 variant="heading-default-s"
-                marginBottom="24"
+                marginBottom="12"
                 onBackground="neutral-weak"
               >
                 {about.publicationsSection.subtitle}
