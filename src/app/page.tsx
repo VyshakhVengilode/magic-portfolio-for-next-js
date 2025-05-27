@@ -39,21 +39,27 @@ export default function Home() {
       />
 <Column fillWidth paddingY="24" gap="m" horizontal="center">
   <Column fillWidth horizontal="center">
-    {home.featured && (
-      <RevealFx fillWidth horizontal="center" paddingBottom="12">
-        <Badge
-          background="brand-alpha-weak"
-          paddingX="12"
-          paddingY="4"
-          onBackground="neutral-strong"
-          textVariant="label-default-s"
-          arrow={false}
-          href={home.featured.href}
-        >
-          <Row paddingY="2">{home.featured.title}</Row>
-        </Badge>
-      </RevealFx>
-    )}
+<RevealFx fillWidth horizontal="center" paddingBottom="12" paddingTop="12" delay={0.4}>
+  <Button
+    id="about"
+    data-border="rounded"
+    href={about.path}
+    variant="secondary"
+    size="m"
+    arrowIcon
+  >
+    <Flex gap="8" vertical="center">
+      {about.avatar.display && (
+        <Avatar
+          style={{ marginLeft: "-0.75rem", marginRight: "0.25rem" }}
+          src={person.avatar}
+          size="m"
+        />
+      )}
+      {about.title}
+    </Flex>
+  </Button>
+</RevealFx>
     <RevealFx translateY="4" fillWidth horizontal="center" paddingBottom="16">
       <Heading
         wrap="balance"
@@ -72,27 +78,6 @@ export default function Home() {
       >
         {home.subline}
       </Text>
-    </RevealFx>
-    <RevealFx paddingTop="12" delay={0.4} horizontal="center">
-      <Button
-        id="about"
-        data-border="rounded"
-        href={about.path}
-        variant="secondary"
-        size="m"
-        arrowIcon
-      >
-        <Flex gap="8" vertical="center">
-          {about.avatar.display && (
-            <Avatar
-              style={{ marginLeft: "-0.75rem", marginRight: "0.25rem" }}
-              src={person.avatar}
-              size="m"
-            />
-          )}
-          {about.title}
-        </Flex>
-      </Button>
     </RevealFx>
   </Column>
 </Column>
