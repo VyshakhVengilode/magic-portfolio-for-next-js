@@ -326,7 +326,7 @@ export default function About() {
                     </Text>
                     <ul style={{ margin: 0, paddingLeft: 20 }}>
                       {section.entries.map((entry, i) => (
-                        <li key={i} style={{ marginBottom: 2 }}>
+                        <li key={i} style={{ marginBottom: 1 }}>
                           <Text variant="body-default-m">{entry.content}</Text>
                         </li>
                       ))}
