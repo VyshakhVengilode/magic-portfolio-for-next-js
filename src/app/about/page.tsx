@@ -305,7 +305,7 @@ export default function About() {
               </Heading>
               <Text
                 variant="heading-default-s"
-                marginBottom="18"
+                marginBottom="16"
                 onBackground="neutral-weak"
               >
                 {about.publicationsSection.subtitle}
