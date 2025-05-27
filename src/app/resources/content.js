@@ -96,10 +96,14 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        I’m Vyshakh Vengilode (P), a Kannur-based graphic designer. I craft impactful visuals
-      for branding, UI, and social media, blending creativity with strategy.
-      My work transforms complex ideas into engaging designs.
-  I’m passionate about storytelling through visuals that resonate.
+        I’m Vyshakh Vengilode (P), a Kannur-based creative professional blending design, storytelling, and
+        code with a deep passion for science. As a graphic designer, I craft impactful visuals for branding, UI,
+        and social media, transforming ideas into engaging designs. As a writer, I create compelling narratives
+        from brand messaging to science articles, published in Mathrubhumi, LUCA (Kerala Sasthra Sahithya
+        Parishat), and more. As a developer, I bring ideas to life through intuitive, functional digital experiences.
+        A science enthusiast at heart, my research and reflections are shared through platforms like
+        ResearchGate and PsyArXiv. I believe in the power of visuals, words, and technology to inform, inspire,
+        and make a difference.
       </>
     ),
   },
