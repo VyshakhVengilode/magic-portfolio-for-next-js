@@ -40,7 +40,7 @@ export default function Home() {
 <Column fillWidth paddingY="24" gap="m" horizontal="center">
   <Column fillWidth horizontal="center">
     {home.featured && (
-      <RevealFx fillWidth horizontal="center" paddingTop="16" paddingBottom="32">
+      <RevealFx fillWidth horizontal="center" paddingTop="4" paddingBottom="32">
         <Badge
           background="brand-alpha-weak"
           paddingX="12"
