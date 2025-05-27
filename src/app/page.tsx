@@ -37,16 +37,10 @@ export default function Home() {
           image: `${baseURL}${person.avatar}`,
         }}
       />
-      <Heading style={{ textAlign: "center" }} wrap="balance" variant="display-strong-l">
-      {home.title}
-      </Heading>
-      <Text style={{ textAlign: "center" }} wrap="balance" onBackground="neutral-weak" variant="heading-default-xl">
-      {home.description}
-      </Text>
       <Column fillWidth paddingY="24" gap="m">
         <Column maxWidth="s">
           {home.featured && (
-          <RevealFx fillWidth horizontal="center" paddingTop="16" paddingBottom="32">
+          <RevealFx fillWidth horizontal="start" paddingTop="16" paddingBottom="32" paddingLeft="12">
             <Badge background="brand-alpha-weak" paddingX="12" paddingY="4" onBackground="neutral-strong" textVariant="label-default-s" arrow={false}
               href={home.featured.href}>
               <Row paddingY="2">{home.featured.title}</Row>
@@ -63,7 +57,7 @@ export default function Home() {
               {home.subline}
             </Text>
           </RevealFx>
-          <RevealFx paddingTop="12" delay={0.4} horizontal="center">
+          <RevealFx paddingTop="12" delay={0.4} horizontal="start" paddingLeft="12">
             <Button
               id="about"
               data-border="rounded"
