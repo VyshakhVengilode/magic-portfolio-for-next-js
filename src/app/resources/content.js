@@ -222,8 +222,178 @@ const about = {
       },
     ],
   },
+  publicationsSection: {
+    title: "Publications",
+    subtitle: "Articles (Science, Psychology, Politics, Philosophy)",
+    sections: [
+      {
+        subtitle: "1) LUCA (Kerala Shasthra Sahithya Parishat)",
+        entries: [
+          {
+            content: (
+              <a href="https://luca.co.in/t-coronae-borealis/" target="_blank" rel="noopener noreferrer">
+                The world of science is ready to see the star world 'explode' - നക്ഷത്ര ലോകത്തെ ‘പൊട്ടിത്തെറി’ കാണാനൊരുങ്ങി ശാസ്ത്രലോകം.
+              </a>
+            ),
+          },
+        ],
+      },
+      {
+        subtitle: "2) Mathrubhumi",
+        entries: [
+          {
+            content: (
+              <a href="https://www.mathrubhumi.com/technology/tech-plus/t-coronae-borealis-northern-celestial-hemisphere-t-crb-1.9511245" target="_blank" rel="noopener noreferrer">
+                3000 പ്രകാശവര്‍ഷം അകലെ നോവയുടെ പൊട്ടിത്തെറി; ഭൂമിയിലിരുന്ന് നമുക്കത് കാണാം.
+              </a>
+            ),
+          },
+          {
+            content: (
+              <a href="https://www.mathrubhumi.com/special-pages/teachers-day-2023/opinion/teachers-day-2023-what-makes-a-good-teacher-1.8878147" target="_blank" rel="noopener noreferrer">
+                നല്ലൊരു അധ്യാപകനെ വളർത്തുന്നത് എന്താണ്?
+              </a>
+            ),
+          },
+        ],
+      },
+      {
+        subtitle: "3) Malayala Manorama",
+        entries: [
+          {
+            content: (
+              <a href="https://www.manoramaonline.com/literature/your-creatives/2023/11/27/malayalam-article-written-by-vysakh-vengilode-about-child-psychology.html" target="_blank" rel="noopener noreferrer">
+                രക്ഷകർത്താക്കൾ അറിയേണ്ട കുട്ടികളുടെ മനഃശാസ്ത്രം.
+              </a>
+            ),
+          },
+          {
+            content: (
+              <a href="https://www.manoramaonline.com/literature/your-creatives/2023/09/15/malayalam-article-written-by-vyshak-vengilode.html" target="_blank" rel="noopener noreferrer">
+                'പ്രണയം' മാറ്റത്തിന്റെ മഹാവിപ്ലവം.
+              </a>
+            ),
+          },
+          {
+            content: (
+              <a href="https://www.manoramaonline.com/literature/your-creatives/2023/06/16/malayalam-article-by-vyshakh-vengilode.html" target="_blank" rel="noopener noreferrer">
+                മാറുന്ന തലമുറയുടെ മാറ്റം നാശത്തിലേക്കല്ല.
+              </a>
+            ),
+          },
+          {
+            content: (
+              <a href="https://www.manoramaonline.com/literature/your-creatives/2023/11/09/malayalam-literature-article-oru-avishwasiyude-lokam.html" target="_blank" rel="noopener noreferrer">
+                ഒരു അവിശ്വാസിയുടെ ലോകം.
+              </a>
+            ),
+          },
+          {
+            content: (
+              <a href="https://www.manoramaonline.com/literature/your-creatives/2025/01/13/malayalam-literature-article-viplavam-sthreekalilude.html" target="_blank" rel="noopener noreferrer">
+                വിപ്ലവം സ്ത്രീകളിലൂടെ.
+              </a>
+            ),
+          },
+        ],
+      },
+      {
+        subtitle: "4) Madhyamam",
+        entries: [
+          {
+            content: (
+              <a href="https://www.madhyamam.com/opinion/articles/march-1-zero-discrimination-day-2025-1384985" target="_blank" rel="noopener noreferrer">
+                വിവേചനങ്ങൾ തുലയട്ടെ, വിവേകം ഉണരട്ടെ.
+              </a>
+            ),
+          },
+          {
+            content: (
+              <a href="https://www.madhyamam.com/technology/reviews/quantum-computer-acts-and-misconceptions-1390437" target="_blank" rel="noopener noreferrer">
+                ക്വാണ്ടം കമ്പ്യൂട്ടർ എപ്പോൾ നമ്മുടെ വീട്ടിലെത്തും?
+              </a>
+            ),
+          },
+        ],
+      },
+      {
+        subtitle: "5) Yuktivaadi",
+        entries: [
+          {
+            content: (
+              <a href="https://www.yukthivaadi.com.leepu.in/articles/view/%E0%B4%B8%E0%B4%AF%E0%B5%BB%E0%B4%B8%E0%B5%81%E0%B4%82-%E0%B4%B8%E0%B4%AF%E0%B4%A8%E0%B5%8D%E0%B4%B1%E0%B4%BF%E0%B4%AB%E0%B4%BF%E0%B4%95%E0%B5%8D-%E0%B4%AE%E0%B5%88%E0%B4%A8%E0%B5%8D%E0%B4%B1%E0%B5%81%E0%B4%82/38" target="_blank" rel="noopener noreferrer">
+                സയൻസും സയന്റിഫിക് മൈന്റും.
+              </a>
+            ),
+          },
+          {
+            content: (
+              <a href="https://www.yukthivaadi.com.leepu.in/articles/view/prnts-chldrn/38" target="_blank" rel="noopener noreferrer">
+                രക്ഷകർത്താക്കളും കുട്ടികളും
+              </a>
+            ),
+          },
+          {
+            content: (
+              <a href="https://www.yukthivaadi.com.leepu.in/articles/view/love-vyshakh/38" target="_blank" rel="noopener noreferrer">
+                'പ്രണയം' മാറ്റത്തിന്റെ മഹാവിപ്ലവം.
+              </a>
+            ),
+          },
+          {
+            content: (
+              <a href="https://www.yukthivaadi.com.leepu.in/articles/view/tcrb-ready-to-explode/38" target="_blank" rel="noopener noreferrer">
+                പൊട്ടിത്തെറിക്കാൻ ഒരുങ്ങി T CrB.
+              </a>
+            ),
+          },
+          {
+            content: (
+              <a href="https://www.yukthivaadi.com/articles/view/politi-vaishakh/7" target="_blank" rel="noopener noreferrer">
+                രാഷ്ട്രീയവും 'അരാഷ്ട്രീയ' വാദവും
+              </a>
+            ),
+          },
+        ],
+      },
+      {
+        subtitle: "Preprints",
+        entries: [
+          {
+            content: (
+              <>
+                <a href="https://www.researchgate.net/publication/391518255_Teaching_Cognitive_Biases_and_Psychology_in_Kerala's_Schools_to_Improve_Civic_Sense_and_Mental_Health" target="_blank" rel="noopener noreferrer">
+                  Teaching Cognitive Biases and Psychology in Kerala’s Schools to Improve Civic Sense and Mental Health
+                </a>
+                {" "}
+                (
+                <a href="https://osf.io/preprints/psyarxiv/ynk74_v2" target="_blank" rel="noopener noreferrer">
+                  DOI:10.31234/osf.io/ynk74_v2
+                </a>
+                )
+              </>
+            ),
+          },
+          {
+            content: (
+              <>
+                <a href="https://www.researchgate.net/publication/391153476_Digital_Micro-Interactions_The_Momentary_Happiness_and_Long-Term_Emotional_Issues_from_Social_Media" target="_blank" rel="noopener noreferrer">
+                  Digital Micro-Interactions: The Momentary Happiness and Long-Term Emotional Issues from Social Media
+                </a>
+                {" "}
+                (
+                <a href="https://osf.io/preprints/psyarxiv/jae4f_v3" target="_blank" rel="noopener noreferrer">
+                  DOI:10.31234/osf.io/jae4f_v3
+                </a>
+                )
+              </>
+            ),
+          },
+        ],
+      },
+    ],
+  },
 };
-
 const publications = {
   path: "/publications",
   label: "Publications",
