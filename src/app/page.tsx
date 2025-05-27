@@ -37,9 +37,9 @@ export default function Home() {
           image: `${baseURL}${person.avatar}`,
         }}
       />
-<Column fillWidth paddingY="24" gap="m" horizontal="center">
+<Column fillWidth paddingY="24" gap="0" horizontal="center">
   <Column fillWidth horizontal="center">
-<RevealFx fillWidth horizontal="center" paddingBottom="12" paddingTop="12" delay={0.4}>
+<RevealFx fillWidth horizontal="center" paddingBottom="12" paddingTop="2" delay={0.4}>
   <Button
     id="about"
     data-border="rounded"
