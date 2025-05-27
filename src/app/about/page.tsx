@@ -240,6 +240,7 @@ export default function About() {
               </Column>
             </>
           )}
+          {/* TECHNICAL SKILLS */}
           {about.technical.display && (
             <>
               <Heading
@@ -288,54 +289,55 @@ export default function About() {
               </Column>
             </>
           )}
-<div style={{ marginTop: 40 }} />
 
-{about.publicationsSection && (
-  <>
-    <Heading
-      as="h2"
-      id={about.publicationsSection.title}
-      variant="display-strong-s"
-      marginBottom="24"
-    >
-      {about.publicationsSection.title}
-    </Heading>
-    <Text
-      variant="heading-default-s"
-      marginBottom="24"
-      onBackground="neutral-weak"
-    >
-      {about.publicationsSection.subtitle}
-    </Text>
-    <Column fillWidth gap="l">
-      {about.publicationsSection.sections.map((section, idx) => (
-        <Column
-          key={idx}
-          fillWidth
-          gap="2"
-          marginBottom="32"
-        >
-          <Text
-            variant="heading-strong-m"
-            marginBottom="8"
-          >
-            {section.subtitle}
-          </Text>
-          <ul style={{ margin: 0, paddingLeft: 20 }}>
-            {section.entries.map((entry, i) => (
-              <li key={i} style={{ marginBottom: 6 }}>
-                <Text variant="body-default-m">{entry.content}</Text>
-              </li>
-            ))}
-          </ul>
+          {/* PUBLICATIONS SECTION: add vertical gap before */}
+          <div style={{ marginTop: 40 }} />
+
+          {about.publicationsSection && (
+            <>
+              <Heading
+                as="h2"
+                id={about.publicationsSection.title}
+                variant="display-strong-s"
+                marginBottom="24"
+              >
+                {about.publicationsSection.title}
+              </Heading>
+              <Text
+                variant="heading-default-s"
+                marginBottom="24"
+                onBackground="neutral-weak"
+              >
+                {about.publicationsSection.subtitle}
+              </Text>
+              <Column fillWidth gap="l">
+                {about.publicationsSection.sections.map((section, idx) => (
+                  <Column
+                    key={idx}
+                    fillWidth
+                    gap="2"
+                    marginBottom="32"
+                  >
+                    <Text
+                      variant="heading-strong-m"
+                      marginBottom="8"
+                    >
+                      {section.subtitle}
+                    </Text>
+                    <ul style={{ margin: 0, paddingLeft: 20 }}>
+                      {section.entries.map((entry, i) => (
+                        <li key={i} style={{ marginBottom: 6 }}>
+                          <Text variant="body-default-m">{entry.content}</Text>
+                        </li>
+                      ))}
+                    </ul>
+                  </Column>
+                ))}
+              </Column>
+            </>
+          )}
         </Column>
-      ))}
-    </Column>
-  </>
-)}
-    </Column>
-</Column>
-    </Flex>
+      </Flex>
     </Column>
   );
 }
