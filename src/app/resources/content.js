@@ -192,13 +192,16 @@ const about = {
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Technical skills",
     skills: [
       {
         title: "AI Prompt Engineering",
-        description: <>Proficient in prompting AI tools to generate high-quality, impactful images and videos.</>,
-        // optional: leave the array empty if you don't want to display images
+        description: (
+          <>
+            Proficient in prompting AI tools to generate high-quality, impactful images and videos.
+          </>
+        ),
         images: [
           {
             src: "/images/projects/project-01/ai.jpg",
@@ -216,12 +219,16 @@ const about = {
       },
       {
         title: "Adobe Creative Suite",
-        description: <>Skilled in Adobe Creative Suite for creating impactful graphics, and digital content.</>,
-        // optional: leave the array empty if you don't want to display images
+        description: (
+          <>
+            Skilled in Adobe Creative Suite for creating impactful graphics, and digital content.
+          </>
+        ),
         images: [],
       },
     ],
   },
+
   publicationsSection: {
     title: "Publications",
     subtitle: "Articles (Science, Psychology, Politics, Philosophy)",
@@ -231,7 +238,11 @@ const about = {
         entries: [
           {
             content: (
-              <a href="https://luca.co.in/t-coronae-borealis/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://luca.co.in/t-coronae-borealis/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 The world of science is ready to see the star world 'explode' - നക്ഷത്ര ലോകത്തെ ‘പൊട്ടിത്തെറി’ കാണാനൊരുങ്ങി ശാസ്ത്രലോകം.
               </a>
             ),
@@ -243,15 +254,23 @@ const about = {
         entries: [
           {
             content: (
-              <a href="https://www.mathrubhumi.com/technology/tech-plus/t-coronae-borealis-northern-celestial-hemisphere-t-crb-1.9511245" target="_blank" rel="noopener noreferrer">
-                3000 പ്രകാശവര്‍ഷം അകലെ നോവയുടെ പൊട്ടിത്തെറി; ഭൂമിയിലിരുന്ന് നമുക്കത് കാണാം.
+              <a
+                href="https://www.mathrubhumi.com/technology/tech-plus/t-coronae-borealis-northern-celestial-hemisphere-t-crb-1.9511245"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                A nova explosion is 3000 light-years away; We can see it on earth - 3000 പ്രകാശവര്‍ഷം അകലെ നോവയുടെ പൊട്ടിത്തെറി; ഭൂമിയിലിരുന്ന് നമുക്കത് കാണാം.
               </a>
             ),
           },
           {
             content: (
-              <a href="https://www.mathrubhumi.com/special-pages/teachers-day-2023/opinion/teachers-day-2023-what-makes-a-good-teacher-1.8878147" target="_blank" rel="noopener noreferrer">
-                നല്ലൊരു അധ്യാപകനെ വളർത്തുന്നത് എന്താണ്?
+              <a
+                href="https://www.mathrubhumi.com/special-pages/teachers-day-2023/opinion/teachers-day-2023-what-makes-a-good-teacher-1.8878147"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                What makes a good teacher? - നല്ലൊരു അധ്യാപകനെ വളർത്തുന്നത് എന്താണ്?
               </a>
             ),
           },
@@ -262,36 +281,56 @@ const about = {
         entries: [
           {
             content: (
-              <a href="https://www.manoramaonline.com/literature/your-creatives/2023/11/27/malayalam-article-written-by-vysakh-vengilode-about-child-psychology.html" target="_blank" rel="noopener noreferrer">
-                രക്ഷകർത്താക്കൾ അറിയേണ്ട കുട്ടികളുടെ മനഃശാസ്ത്രം.
+              <a
+                href="https://www.manoramaonline.com/literature/your-creatives/2023/11/27/malayalam-article-written-by-vysakh-vengilode-about-child-psychology.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Child Psychology Parents Need to Know - രക്ഷകർത്താക്കൾ അറിയേണ്ട കുട്ടികളുടെ മനഃശാസ്ത്രം.
               </a>
             ),
           },
           {
             content: (
-              <a href="https://www.manoramaonline.com/literature/your-creatives/2023/09/15/malayalam-article-written-by-vyshak-vengilode.html" target="_blank" rel="noopener noreferrer">
-                'പ്രണയം' മാറ്റത്തിന്റെ മഹാവിപ്ലവം.
+              <a
+                href="https://www.manoramaonline.com/literature/your-creatives/2023/09/15/malayalam-article-written-by-vyshak-vengilode.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                'Love' is the great revolution of change - 'പ്രണയം' മാറ്റത്തിന്റെ മഹാവിപ്ലവം.
               </a>
             ),
           },
           {
             content: (
-              <a href="https://www.manoramaonline.com/literature/your-creatives/2023/06/16/malayalam-article-by-vyshakh-vengilode.html" target="_blank" rel="noopener noreferrer">
-                മാറുന്ന തലമുറയുടെ മാറ്റം നാശത്തിലേക്കല്ല.
+              <a
+                href="https://www.manoramaonline.com/literature/your-creatives/2023/06/16/malayalam-article-by-vyshakh-vengilode.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                A Changing Generation's shift is Not a Doom - മാറുന്ന തലമുറയുടെ മാറ്റം നാശത്തിലേക്കല്ല.
               </a>
             ),
           },
           {
             content: (
-              <a href="https://www.manoramaonline.com/literature/your-creatives/2023/11/09/malayalam-literature-article-oru-avishwasiyude-lokam.html" target="_blank" rel="noopener noreferrer">
-                ഒരു അവിശ്വാസിയുടെ ലോകം.
+              <a
+                href="https://www.manoramaonline.com/literature/your-creatives/2023/11/09/malayalam-literature-article-oru-avishwasiyude-lokam.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                An Atheist's World - ഒരു അവിശ്വാസിയുടെ ലോകം.
               </a>
             ),
           },
           {
             content: (
-              <a href="https://www.manoramaonline.com/literature/your-creatives/2025/01/13/malayalam-literature-article-viplavam-sthreekalilude.html" target="_blank" rel="noopener noreferrer">
-                വിപ്ലവം സ്ത്രീകളിലൂടെ.
+              <a
+                href="https://www.manoramaonline.com/literature/your-creatives/2025/01/13/malayalam-literature-article-viplavam-sthreekalilude.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Revolution through women - വിപ്ലവം സ്ത്രീകളിലൂടെ.
               </a>
             ),
           },
@@ -302,15 +341,23 @@ const about = {
         entries: [
           {
             content: (
-              <a href="https://www.madhyamam.com/opinion/articles/march-1-zero-discrimination-day-2025-1384985" target="_blank" rel="noopener noreferrer">
-                വിവേചനങ്ങൾ തുലയട്ടെ, വിവേകം ഉണരട്ടെ.
+              <a
+                href="https://www.madhyamam.com/opinion/articles/march-1-zero-discrimination-day-2025-1384985"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Let discriminations fade, let wisdom awaken - വിവേചനങ്ങൾ തുലയട്ടെ, വിവേകം ഉണരട്ടെ.
               </a>
             ),
           },
           {
             content: (
-              <a href="https://www.madhyamam.com/technology/reviews/quantum-computer-acts-and-misconceptions-1390437" target="_blank" rel="noopener noreferrer">
-                ക്വാണ്ടം കമ്പ്യൂട്ടർ എപ്പോൾ നമ്മുടെ വീട്ടിലെത്തും?
+              <a
+                href="https://www.madhyamam.com/technology/reviews/quantum-computer-acts-and-misconceptions-1390437"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                When will quantum computers come to our homes? - ക്വാണ്ടം കമ്പ്യൂട്ടർ എപ്പോൾ നമ്മുടെ വീട്ടിലെത്തും?
               </a>
             ),
           },
@@ -321,53 +368,285 @@ const about = {
         entries: [
           {
             content: (
-              <a href="https://www.yukthivaadi.com.leepu.in/articles/view/%E0%B4%B8%E0%B4%AF%E0%B5%BB%E0%B4%B8%E0%B5%81%E0%B4%82-%E0%B4%B8%E0%B4%AF%E0%B4%A8%E0%B5%8D%E0%B4%B1%E0%B4%BF%E0%B4%AB%E0%B4%BF%E0%B4%95%E0%B5%8D-%E0%B4%AE%E0%B5%88%E0%B4%A8%E0%B5%8D%E0%B4%B1%E0%B5%81%E0%B4%82/38" target="_blank" rel="noopener noreferrer">
-                സയൻസും സയന്റിഫിക് മൈന്റും.
+              <a
+                href="https://www.yukthivaadi.com.leepu.in/articles/view/%E0%B4%B8%E0%B4%AF%E0%B5%BB%E0%B4%B8%E0%B5%81%E0%B4%82-%E0%B4%B8%E0%B4%AF%E0%B4%A8%E0%B5%8D%E0%B4%B1%E0%B4%BF%E0%B4%AB%E0%B4%BF%E0%B4%95%E0%B5%8D-%E0%B4%AE%E0%B5%88%E0%B4%A8%E0%B5%8D%E0%B4%B1%E0%B5%81%E0%B4%82/38"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Science and the scientific mind - സയൻസും സയന്റിഫിക് മൈന്റും.
               </a>
             ),
           },
           {
             content: (
-              <a href="https://www.yukthivaadi.com.leepu.in/articles/view/prnts-chldrn/38" target="_blank" rel="noopener noreferrer">
-                രക്ഷകർത്താക്കളും കുട്ടികളും
+              <a
+                href="https://www.yukthivaadi.com.leepu.in/articles/view/prnts-chldrn/38"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                The parents and the children - രക്ഷകർത്താക്കളും കുട്ടികളും
               </a>
             ),
           },
           {
             content: (
-              <a href="https://www.yukthivaadi.com.leepu.in/articles/view/love-vyshakh/38" target="_blank" rel="noopener noreferrer">
-                'പ്രണയം' മാറ്റത്തിന്റെ മഹാവിപ്ലവം.
+              <a
+                href="https://www.yukthivaadi.com.leepu.in/articles/view/love-vyshakh/38"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                'Love' is the great revolution of change - 'പ്രണയം' മാറ്റത്തിന്റെ മഹാവിപ്ലവം.
               </a>
             ),
           },
           {
             content: (
-              <a href="https://www.yukthivaadi.com.leepu.in/articles/view/tcrb-ready-to-explode/38" target="_blank" rel="noopener noreferrer">
-                പൊട്ടിത്തെറിക്കാൻ ഒരുങ്ങി T CrB.
+              <a
+                href="https://www.yukthivaadi.com.leepu.in/articles/view/tcrb-ready-to-explode/38"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                T CrB ready to explode - പൊട്ടിത്തെറിക്കാൻ ഒരുങ്ങി T CrB.
               </a>
             ),
           },
           {
             content: (
-              <a href="https://www.yukthivaadi.com/articles/view/politi-vaishakh/7" target="_blank" rel="noopener noreferrer">
-                രാഷ്ട്രീയവും 'അരാഷ്ട്രീയ' വാദവും
+              <a
+                href="https://www.yukthivaadi.com/articles/view/politi-vaishakh/7"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                The politics and the apolitics - രാഷ്ട്രീയവും 'അരാഷ്ട്രീയ' വാദവും
+              </a>
+            ),
+          },
+        ],
+      },
+    ],
+  },
+
+  shortstorySection: {
+    title: "",
+    subtitle: "Short Stories",
+    sections: [
+      {
+        subtitle: "1) Asianet News (Chilla)",
+        entries: [
+          {
+            content: (
+              <a
+                href="https://www.asianetnews.com/literature-magazine/chilla-malayalam-short-story-by-vaisakh-vengilode-s3t2ve"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Sophia - സോഫിയ
               </a>
             ),
           },
         ],
       },
       {
-        subtitle: "Preprints",
+        subtitle: "2) Malayala Manorama",
+        entries: [
+          {
+            content: (
+              <a
+                href="https://www.manoramaonline.com/literature/your-creatives/2023/11/02/malayalam-literature-short-story-sophia.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Sophia - സോഫിയ
+              </a>
+            ),
+          },
+          {
+            content: (
+              <a
+                href="https://www.manoramaonline.com/literature/your-creatives/2023/07/20/malayalam-short-story-swachanda-mrithi.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Swachandha Mruthi (Peaceful Death) - സ്വച്ഛന്ദ മൃതി.
+              </a>
+            ),
+          },
+        ],
+      },
+    ],
+  },
+
+  poemsSection: {
+    title: "",
+    subtitle: "Poems",
+    sections: [
+      {
+        subtitle: "1) Malayala Manorama",
+        entries: [
+          {
+            content: (
+              <a
+                href="https://www.manoramaonline.com/literature/your-creatives/2023/06/08/malayalam-poem-samanathakal.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Samanathakal (Similarities) - സമാനതകൾ.
+              </a>
+            ),
+          },
+          {
+            content: (
+              <a
+                href="https://www.manoramaonline.com/literature/your-creatives/2023/05/12/malayalam-poem-jeevitham.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Jeevitham (Life) - ജീവിതം.
+              </a>
+            ),
+          },
+          {
+            content: (
+              <a
+                href="https://www.manoramaonline.com/literature/your-creatives/2024/03/18/malayalam-poem-randidangalil.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Randidangalil (In two places) - രണ്ടിടങ്ങളിൽ.
+              </a>
+            ),
+          },
+          {
+            content: (
+              <a
+                href="https://www.manoramaonline.com/literature/your-creatives/2022/09/15/malayalam-poem-neduveerppu.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Neduveerppu (Sigh) - നെടുവീർപ്പ്.
+              </a>
+            ),
+          },
+          {
+            content: (
+              <a
+                href="https://www.manoramaonline.com/literature/your-creatives/2023/07/26/malayalam-poem-sneha-beejam.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Sneha Beejam (Seed of love) സ്നേഹ ബീജം.
+              </a>
+            ),
+          },
+        ],
+      },
+      {
+        subtitle: "2) Poem Hunter",
+        entries: [
+          {
+            content: (
+              <a
+                href="https://www.poemhunter.com/poem/vyshakh-vengilode-6213/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Yathrakal (Journeys) - യാത്രകൾ.
+              </a>
+            ),
+          },
+          {
+            content: (
+              <a
+                href="https://www.poemhunter.com/poem/flight-of-freedom-a-poem-of-hope-and-love/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Flight of Freedom (English).
+              </a>
+            ),
+          },
+        ],
+      },
+      {
+        subtitle: "3) The Emotional Typewriter",
+        entries: [
+          {
+            content: (
+              <a
+                href="https://www.instagram.com/p/CCKttvEHxiQ/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Artist (English).
+              </a>
+            ),
+          },
+          {
+            content: (
+              <a
+                href="https://www.facebook.com/share/VkxDQ1T99xgKRSY5/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Flight of Freedom (English).
+              </a>
+            ),
+          },
+        ],
+      },
+      {
+        subtitle: "4) Nashtapetta Neelambari",
+        entries: [
+          {
+            content: (
+              <a
+                href="https://www.facebook.com/share/p/JfRxGr9FwPVAmE7B/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Niraamaya Kavyam (Immortal Poetry) - നിരാമയ കാവ്യം
+              </a>
+            ),
+          },
+          {
+            content: (
+              <a
+                href="https://www.facebook.com/share/p/ouR8xR2iBQPi5s9E/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Chirakalam (Forever) - ചിരകാലം
+              </a>
+            ),
+          },
+        ],
+      },
+    ],
+  },
+
+  preprintSection: {
+    title: "",
+    subtitle: "Preprints",
+    sections: [
+      {
+        subtitle: "",
         entries: [
           {
             content: (
               <>
-                <a href="https://www.researchgate.net/publication/391518255_Teaching_Cognitive_Biases_and_Psychology_in_Kerala's_Schools_to_Improve_Civic_Sense_and_Mental_Health" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.researchgate.net/publication/391518255_Teaching_Cognitive_Biases_and_Psychology_in_Kerala's_Schools_to_Improve_Civic_Sense_and_Mental_Health"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Teaching Cognitive Biases and Psychology in Kerala’s Schools to Improve Civic Sense and Mental Health
-                </a>
-                {" "}
+                </a>{" "}
                 (
-                <a href="https://osf.io/preprints/psyarxiv/ynk74_v2" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://osf.io/preprints/psyarxiv/ynk74_v2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   DOI:10.31234/osf.io/ynk74_v2
                 </a>
                 )
@@ -377,12 +656,19 @@ const about = {
           {
             content: (
               <>
-                <a href="https://www.researchgate.net/publication/391153476_Digital_Micro-Interactions_The_Momentary_Happiness_and_Long-Term_Emotional_Issues_from_Social_Media" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.researchgate.net/publication/391153476_Digital_Micro-Interactions_The_Momentary_Happiness_and_Long-Term_Emotional_Issues_from_Social_Media"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Digital Micro-Interactions: The Momentary Happiness and Long-Term Emotional Issues from Social Media
-                </a>
-                {" "}
+                </a>{" "}
                 (
-                <a href="https://osf.io/preprints/psyarxiv/jae4f_v3" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://osf.io/preprints/psyarxiv/jae4f_v3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   DOI:10.31234/osf.io/jae4f_v3
                 </a>
                 )
@@ -392,7 +678,7 @@ const about = {
         ],
       },
     ],
-  },
+  }
 };
 const publications = {
   path: "/publications",
