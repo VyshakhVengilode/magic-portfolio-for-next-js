@@ -20,7 +20,7 @@ export async function generateMetadata() {
 
 export default function Home() {
   return (
-    <Column maxWidth="m" gap="xxs" horizontal="center">
+    <Column maxWidth="m" gap="0" horizontal="center">
       <RevealFx translateY="16" delay={0.6}>
         <Projects range={[1, 1]} />
       </RevealFx>
@@ -37,10 +37,16 @@ export default function Home() {
           image: `${baseURL}${person.avatar}`,
         }}
       />
+      <Heading style={{ textAlign: "center" }} wrap="balance" variant="display-strong-l">
+      {home.title}
+      </Heading>
+      <Text style={{ textAlign: "center" }} wrap="balance" onBackground="neutral-weak" variant="heading-default-xl">
+      {home.description}
+      </Text>
       <Column fillWidth paddingY="24" gap="m">
         <Column maxWidth="s">
           {home.featured && (
-          <RevealFx fillWidth horizontal="start" paddingTop="16" paddingBottom="32" paddingLeft="12">
+          <RevealFx fillWidth horizontal="center" paddingTop="16" paddingBottom="32">
             <Badge background="brand-alpha-weak" paddingX="12" paddingY="4" onBackground="neutral-strong" textVariant="label-default-s" arrow={false}
               href={home.featured.href}>
               <Row paddingY="2">{home.featured.title}</Row>
