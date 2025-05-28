@@ -63,26 +63,40 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                 {description}
               </Text>
             )}
-              <Flex gap="24" wrap style={{ alignItems: "center" }}>
-              {content?.trim() && (
-                <SmartLink
-                suffixIcon="arrowRight"
-                style={{ margin: "0", width: "fit-content" }}
-                href={href}
-              >
-              <Text variant="body-default-s">Read more</Text>
-              </SmartLink>
-           )}
-        {link && (
-              <SmartLink
-              suffixIcon="arrowUpRightFromSquare"
-              style={{ margin: "0", width: "fit-content" }}
-              href={link}
-             >
-                <Text variant="body-default-s">Read more</Text>
-             </SmartLink>
-           )}
-          </Flex>
+<Flex gap="24" wrap style={{ alignItems: "center" }}>
+  {content?.trim() && (
+    <SmartLink
+      suffixIcon="arrowRight"
+      style={{
+        margin: "0",
+        width: "100%",
+        aspectRatio: "1 / 1",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center"
+      }}
+      href={href}
+    >
+      <Text variant="body-default-s">Read more</Text>
+    </SmartLink>
+  )}
+  {link && (
+    <SmartLink
+      suffixIcon="arrowUpRightFromSquare"
+      style={{
+        margin: "0",
+        width: "100%",
+        aspectRatio: "1 / 1",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center"
+      }}
+      href={link}
+    >
+      <Text variant="body-default-s">Read more</Text>
+    </SmartLink>
+  )}
+</Flex>
           </Column>
         )}
       </Flex>
