@@ -63,7 +63,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                 {description}
               </Text>
             )}
-            <Flex gap="24" wrap>
+            <Flex gap="24" wrap alignItems="center">
               {content?.trim() && (
                 <SmartLink
                   suffixIcon="arrowRight"
