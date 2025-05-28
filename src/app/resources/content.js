@@ -69,7 +69,7 @@ const home = {
   },
   subline: (
     <>
-     Portfolio website showcasing my work as a Graphic Designer | Writer | Developer
+     Portfolio showcasing my work as a Graphic Designer | Writer | Developer
     </>
   ),
 };
