@@ -428,6 +428,35 @@ export default function About() {
     </Column>
   </>
 )}
+{/* YOUTUBE VIDEOS SECTION */}
+<div style={{ marginTop: 40 }} />
+<Heading
+  as="h2"
+  variant="display-strong-s"
+  marginBottom="8"
+>
+  Article Presentations
+</Heading>
+<Column fillWidth gap="l">
+  <Flex gap="24" wrap>
+    {[
+      "g3rWQ3j8K38", // Replace with your YouTube video IDs
+      "Hs9IJL98x0I"
+    ].map((id) => (
+      <iframe
+        key={id}
+        width="300"
+        height="170"
+        src={`https://www.youtube.com/embed/${id}`}
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+        style={{ borderRadius: 8, marginBottom: 16 }}
+      />
+    ))}
+  </Flex>
+</Column>
             </>
           )}
         </Column>
