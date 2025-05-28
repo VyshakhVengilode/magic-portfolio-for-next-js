@@ -625,7 +625,7 @@ const about = {
 
   preprintSection: {
     title: "",
-    subtitle: "Preprints",
+    subtitle: "Preprints (Research)",
     sections: [
       {
         subtitle: "",
