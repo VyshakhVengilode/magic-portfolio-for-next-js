@@ -108,30 +108,6 @@ export default function Home() {
     justifyContent: "center"
   }}
 >
-  {/* Schedule a call button */}
-  <Flex
-    fitWidth
-    border="brand-alpha-medium"
-    className={styles.blockAlign}
-    style={{
-      backdropFilter: "blur(var(--static-space-1))",
-      minWidth: 220,
-    }}
-    background="brand-alpha-weak"
-    radius="full"
-    padding="4"
-    gap="8"
-    vertical="center"
-  >
-    <Icon paddingLeft="12" name="calendar" onBackground="brand-weak" />
-    <Flex paddingX="8">Schedule a call</Flex>
-    <IconButton
-      href={home.calendar.link}
-      data-border="rounded"
-      variant="secondary"
-      icon="chevronRight"
-    />
-  </Flex>
   {/* Artistry button */}
   <Flex
     fitWidth
