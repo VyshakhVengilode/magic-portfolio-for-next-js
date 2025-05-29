@@ -130,7 +130,7 @@ export default function Home() {
     vertical="center"
   >
     <Icon paddingLeft="12" name="publications" onBackground="brand-weak" />
-    <Flex paddingX="8">Artistry</Flex>
+    <Flex paddingX="8">Explore Artworks</Flex>
     <IconButton
       href="https://artistrydesigndiaries.blogspot.com/"
       data-border="rounded"
@@ -153,7 +153,7 @@ export default function Home() {
     vertical="center"
   >
     <Icon paddingLeft="12" name="SiBiolink" onBackground="brand-weak" />
-    <Flex paddingX="8">Link In Bio</Flex>
+    <Flex paddingX="8">Read Writings</Flex>
     <IconButton
       href="https://hopp.bio/vyshakhvengilode"
       data-border="rounded"
