@@ -107,6 +107,7 @@ export default function Home() {
     display: "flex",
     justifyContent: "center"
   }}
+  mobileDirection="column"
 >
   {/* Artistry button */}
   <Flex
