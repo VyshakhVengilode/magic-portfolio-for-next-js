@@ -82,29 +82,85 @@ export default function Home() {
     </RevealFx>
   </Column>
               {home.calendar.display && (
-              <Flex
-                fitWidth
-                border="brand-alpha-medium"
-                className={styles.blockAlign}
-                style={{
-                  backdropFilter: "blur(var(--static-space-1))",
-                }}
-                background="brand-alpha-weak"
-                radius="full"
-                padding="4"
-                gap="8"
-                marginBottom="m"
-                vertical="center"
-              >
-                <Icon paddingLeft="12" name="calendar" onBackground="brand-weak" />
-                <Flex paddingX="8">Schedule a call</Flex>
-                <IconButton
-                  href={home.calendar.link}
-                  data-border="rounded"
-                  variant="secondary"
-                  icon="chevronRight"
-                />
-              </Flex>
+<Flex
+  gap="16"
+  justify="center"
+  marginBottom="m"
+  style={{ width: "100%" }}
+>
+  {/* Schedule a call button */}
+  <Flex
+    fitWidth
+    border="brand-alpha-medium"
+    className={styles.blockAlign}
+    style={{
+      backdropFilter: "blur(var(--static-space-1))",
+      minWidth: 220,
+    }}
+    background="brand-alpha-weak"
+    radius="full"
+    padding="4"
+    gap="8"
+    vertical="center"
+  >
+    <Icon paddingLeft="12" name="calendar" onBackground="brand-weak" />
+    <Flex paddingX="8">Schedule a call</Flex>
+    <IconButton
+      href={home.calendar.link}
+      data-border="rounded"
+      variant="secondary"
+      icon="chevronRight"
+    />
+  </Flex>
+  {/* Artistry button */}
+  <Flex
+    fitWidth
+    border="brand-alpha-medium"
+    className={styles.blockAlign}
+    style={{
+      backdropFilter: "blur(var(--static-space-1))",
+      minWidth: 220,
+    }}
+    background="brand-alpha-weak"
+    radius="full"
+    padding="4"
+    gap="8"
+    vertical="center"
+  >
+    <Icon paddingLeft="12" name="publications" onBackground="brand-weak" />
+    <Flex paddingX="8">Artistry</Flex>
+    <IconButton
+      href="https://artistrydesigndiaries.blogspot.com/"
+      data-border="rounded"
+      variant="secondary"
+      icon="chevronRight"
+    />
+  </Flex>
+  {/* Link In Bio button */}
+  <Flex
+    fitWidth
+    border="brand-alpha-medium"
+    className={styles.blockAlign}
+    style={{
+      backdropFilter: "blur(var(--static-space-1))",
+      minWidth: 220,
+    }}
+    background="brand-alpha-weak"
+    radius="full"
+    padding="4"
+    gap="8"
+    vertical="center"
+  >
+    <Icon paddingLeft="12" name="SiBiolink" onBackground="brand-weak" />
+    <Flex paddingX="8">Link In Bio</Flex>
+    <IconButton
+      href="https://hopp.bio/vyshakhvengilode"
+      data-border="rounded"
+      variant="secondary"
+      icon="chevronRight"
+    />
+  </Flex>
+</Flex>
             )}
 </Column>
       {routes["/blog"] && (
