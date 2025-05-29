@@ -84,9 +84,12 @@ export default function Home() {
               {home.calendar.display && (
 <Flex
   gap="16"
-  justify="center"
   marginBottom="m"
-  style={{ width: "100%" }}
+  style={{
+    width: "100%",
+    display: "flex",
+    justifyContent: "center"
+  }}
 >
   {/* Schedule a call button */}
   <Flex
