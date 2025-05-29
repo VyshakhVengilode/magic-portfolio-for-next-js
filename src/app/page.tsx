@@ -122,7 +122,6 @@ export default function Home() {
     className={styles.blockAlign}
     style={{
       backdropFilter: "blur(var(--static-space-1))",
-      minWidth: 220,
     }}
     background="brand-alpha-weak"
     radius="full"
@@ -146,7 +145,6 @@ export default function Home() {
     className={styles.blockAlign}
     style={{
       backdropFilter: "blur(var(--static-space-1))",
-      minWidth: 220,
     }}
     background="brand-alpha-weak"
     radius="full"
