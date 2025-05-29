@@ -8,6 +8,7 @@ import { home, about, person, newsletter } from "@/app/resources/content";
 import { Mailchimp } from "@/components";
 import { Posts } from "@/components/blog/Posts";
 import { Meta, Schema } from "@/once-ui/modules";
+import styles from "@/components/about/about.module.scss";
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -98,7 +99,7 @@ export default function Home() {
                 <Icon paddingLeft="12" name="calendar" onBackground="brand-weak" />
                 <Flex paddingX="8">Schedule a call</Flex>
                 <IconButton
-                  href={about.calendar.link}
+                  href={home.calendar.link}
                   data-border="rounded"
                   variant="secondary"
                   icon="chevronRight"
