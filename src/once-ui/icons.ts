@@ -1,5 +1,6 @@
 import { IconType } from "react-icons";
 import { SiBiolink } from "react-icons/si";
+import { FaPaintBrush } from "react-icons/fa";
 
 import {
   HiChevronUp,
@@ -56,7 +57,7 @@ export const iconLibrary: Record<string, IconType> = {
   email: HiEnvelope,
   globe: HiMiniGlobeAsiaAustralia,
   person: PiUserCircleDuotone,
-  grid: PiGridFourDuotone,
+  grid: FaPaintBrush,
   book: PiBookBookmarkDuotone,
   close: HiMiniXMark,
   openLink: HiOutlineLink,
