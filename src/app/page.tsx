@@ -1,3 +1,4 @@
+import { metadata } from "./metadata";
 import React from "react";
 
 import { Heading, Flex, Text, Button, Avatar, RevealFx, Column, Badge, Row, Icon, IconButton, SmartImage, Tag } from "@/once-ui/components";
