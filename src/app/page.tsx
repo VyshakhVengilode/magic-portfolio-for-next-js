@@ -1,3 +1,4 @@
+import { sharedMetadata } from "./sharedMetadata";
 import React from "react";
 
 import { Heading, Flex, Text, Button, Avatar, RevealFx, Column, Badge, Row, Icon, IconButton, SmartImage, Tag } from "@/once-ui/components";
@@ -10,31 +11,42 @@ import { Posts } from "@/components/blog/Posts";
 import { Meta, Schema } from "@/once-ui/modules";
 import styles from "@/components/about/about.module.scss";
 
-export const metadata = {
-  title: "Vyshakh Vengilode's Portfolio",
-  description: "Portfolio website showcasing my work as a Graphic Designer | Writer | Developer",
-  openGraph: {
+
+export async function generateMetadata({ params }: { params?: any }): Promise<Metadata> {
+  return {
+    ...sharedMetadata, // <-- this line adds your shared fields!
     title: "Vyshakh Vengilode's Portfolio",
     description: "Portfolio website showcasing my work as a Graphic Designer | Writer | Developer",
-    images: [
-      {
-        url: "https://raw.githubusercontent.com/VyshakhVengilode/magic-portfolio-for-next-js/refs/heads/main/public/images/projects/project-01/portfolio-01.jpg?token=GHSAT0AAAAAADEPI7CMWYWKROHQJFJC3YGG2BXYKWQ",
-        width: 1200,
-        height: 630,
-        alt: "Vyshakh Vengilode's Portfolio",
-      },
-    ],
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Vyshakh Vengilode's Portfolio",
-    description: "Portfolio website showcasing my work as a Graphic Designer | Writer | Developer",
-    images: [
-      "https://raw.githubusercontent.com/VyshakhVengilode/magic-portfolio-for-next-js/refs/heads/main/public/images/projects/project-01/portfolio-01.jpg?token=GHSAT0AAAAAADEPI7CMWYWKROHQJFJC3YGG2BXYKWQ",
-    ],
-  },
-};
+    metadataBase: new URL("https://magic-portfolio-for-next-js-psi-sable.vercel.app"),
+    openGraph: {
+      title: "Vyshakh Vengilode's Portfolio",
+      description: "Portfolio website showcasing my work as a Graphic Designer | Writer | Developer",
+      siteName: "Vyshakh Vengilode's Portfolio",
+      images: [
+        {
+          url: "/images/projects/project-01/portfolio-01.jpg",
+          width: 1200,
+          height: 630,
+          alt: "Vyshakh Vengilode's Portfolio",
+        },
+      ],
+      locale: "en_US",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Vyshakh Vengilode's Portfolio",
+      description: "Portfolio website showcasing my work as a Graphic Designer | Writer | Developer",
+      images: [
+        "/images/projects/project-01/portfolio-01.jpg",
+      ],
+      creator: "@vyshakhvengilode"
+    },
+    alternates: {
+      canonical: "", 
+    }
+  };
+}
 
 export default function Home() {
   return (
