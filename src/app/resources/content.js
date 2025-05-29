@@ -72,6 +72,10 @@ const home = {
      Portfolio showcasing my work as a Graphic Designer | Writer | Developer
     </>
   ),
+    },
+  calendar: {
+    display: true,
+    link: "https://cal.com/vyshakhvengilode",
 };
 
 const about = {
