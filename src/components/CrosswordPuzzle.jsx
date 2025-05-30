@@ -1,6 +1,5 @@
 import React, { useState, useMemo } from "react";
 
-// Pool of words and clues
 const WORDS = [
   { word: "CATS", clue: "Meowing pets" },
   { word: "DOGS", clue: "Barking animals" },
@@ -12,13 +11,10 @@ const WORDS = [
   { word: "BEAR", clue: "Large, furry, and strong animal" },
 ];
 
-// Generate a random crossword (simple: each word in a row/col, no overlap)
 function generateCrossword() {
-  // Shuffle and pick 4 words
-  const shuffled = WORDS.sort(() => 0.5 - Math.random());
+  const shuffled = [...WORDS].sort(() => 0.5 - Math.random());
   const selected = shuffled.slice(0, 4);
 
-  // Place words horizontally (row-wise)
   const grid = Array(4)
     .fill(null)
     .map(() => Array(4).fill(null));
@@ -26,7 +22,6 @@ function generateCrossword() {
   const down = [];
 
   selected.forEach((item, idx) => {
-    // Place horizontally (across)
     for (let j = 0; j < 4; j++) {
       grid[idx][j] = item.word[j];
     }
@@ -37,7 +32,6 @@ function generateCrossword() {
       col: 0,
       answer: item.word,
     });
-    // Place vertically (down)
     for (let j = 0; j < 4; j++) {
       grid[j][idx] = selected[j].word[idx];
     }
@@ -46,7 +40,11 @@ function generateCrossword() {
       clue: selected[idx].clue,
       row: 0,
       col: idx,
-      answer: selected[0].word[idx] + selected[1].word[idx] + selected[2].word[idx] + selected[3].word[idx]
+      answer:
+        selected[0].word[idx] +
+        selected[1].word[idx] +
+        selected[2].word[idx] +
+        selected[3].word[idx],
     });
   });
 
@@ -58,7 +56,6 @@ function getCellKey(row, col) {
 }
 
 const CrosswordPuzzle = () => {
-  // Use useMemo so it only generates once per page load
   const { grid, across, down } = useMemo(() => generateCrossword(), []);
   const [inputs, setInputs] = useState({});
 
