@@ -4,22 +4,22 @@ import styles from "./PersonalFavorites.module.css";
 const favorites = [
   {
     category: "Movie",
-    title: "ദൃശ്യം (Drishyam)",
-    img: "https://m.media-amazon.com/images/I/81I+z1bHMhL._AC_SY679_.jpg",
-    description: "A thrilling story of a family's resilience—its suspense and emotional depth always captivate me.",
-    link: "https://letterboxd.com/film/drishyam/"
+    title: "നരിവേട്ട (Narivetta)",
+    img: "https://assetscdn1.paytm.com/images/cinema/Naviretta-e011a720-2a57-11f0-bd90-d94369f6f4ca.jpg?format=webp",
+    description: "ഭൂമിയുടെ അവകാശികളെ കുറിച്ച് ചിന്തിപ്പിക്കുന്ന സിനിമ. മുത്തങ്ങ സംഭവം ആരും മറക്കുന്ന ഒന്നല്ല. നിരന്തരം ആദിവാസി സമൂഹം നേരിടേണ്ടി വരുന്ന നീതി നിഷേധത്തെ കുറിച്ച് ചർച്ച ചെയ്യാൻ പ്രേരിപ്പിച്ച കലാസൃഷ്ട്ടി. കാട് സർക്കാരെടുത്തപ്പോൾ കയ്യേറ്റക്കാരായി മാറിയ കാടിന്റെ താളം അറിയുന്ന കുറേ മനുഷ്യർ ഇന്നുമിവിടെ ഉണ്ടെന്ന അടയാളപ്പെടുത്തൽ. അയ്യങ്കാളി പടയെ ചിത്രീകരിച്ച 'പട' എന്ന സിനിമയ്‌ക്കൊപ്പം വെക്കാവുന്ന ഒന്ന്.",
+    link: "https://en.wikipedia.org/wiki/Narivetta"
   },
   {
     category: "Movie",
     title: "കുമ്പളങ്ങി നൈറ്റ്സ് (Kumbalangi Nights)",
-    img: "https://m.media-amazon.com/images/I/81Q2r4ZT8aL._AC_SY679_.jpg",
+    img: "https://m3db.com/sites/default/files/styles/poster_node_copy/public/posters/kumbalangi%20nights_0.jpg?itok=lkEKl5sc",
     description: "Kumbalangi Nightsന്റെ ഹൃദയസ്പർശിയായ കഥയും ദൃശ്യഭംഗിയും എന്നെ എപ്പോഴും പ്രചോദിപ്പിക്കുന്നു!",
     link: "https://letterboxd.com/film/kumbalangi-nights/"
   },
   {
     category: "Movie",
     title: "All We Imagine as Light",
-    img: "https://upload.wikimedia.org/wikipedia/en/6/61/All_We_Imagine_as_Light_poster.jpg",
+    img: "https://upload.wikimedia.org/wikipedia/en/1/1c/All_We_Imagine_as_Light_film_poster.jpg",
     description: "Not strictly Malayalam, but featuring Kani Kusruti and Divya Prabha—beautifully connects with my love for nuanced cinema.",
     link: "https://letterboxd.com/film/all-we-imagine-as-light/"
   },
