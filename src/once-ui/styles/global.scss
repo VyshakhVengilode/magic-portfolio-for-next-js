@@ -110,3 +110,25 @@ a:not(.button) {
 ::-webkit-scrollbar-corner {
     background-color: var(--static-transparent);
 }
+
+:root {
+  /* DARK THEME DEFAULTS */
+  --page-text: #fff;
+  --surface-alpha-weak: rgba(30,30,30,0.7);
+  --neutral-alpha-medium: #bbb;
+  --brand-on-background-medium: #23c0fd;
+  --brand-on-background-strong: #16a0d8;
+  --neutral-border-strong: #444;
+  /* Add any others you use! */
+}
+
+/* Light theme overrides */
+[data-theme="light"] {
+  --page-text: #232323;
+  --surface-alpha-weak: #f8f8f8;
+  --neutral-alpha-medium: #333;
+  --brand-on-background-medium: #0072c6;
+  --brand-on-background-strong: #005a9e;
+  --neutral-border-strong: #ccc;
+  /* Add any others you use! */
+}
