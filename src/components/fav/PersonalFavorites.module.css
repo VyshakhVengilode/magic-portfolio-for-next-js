@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@700&display=swap');
+
+.section {
+  background: #f5f2ec;
+  padding: 36px 0;
+  border-radius: 20px;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sectionIntro {
+  margin-bottom: 24px;
+}
+
+.malayalamTitle {
+  font-family: 'Noto Sans Malayalam', Roboto, sans-serif;
+  color: #296148;
+  font-weight: 700;
+  margin-bottom: 0.2em;
+}
+
+.introEn {
+  font-size: 1.1em;
+  color: #835213;
+}
+
+.carouselContainer {
+  background: #f4f1ec;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 8px #0001;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.carouselTitle {
+  color: #b6572c;
+  margin-bottom: 12px;
+  font-family: 'Noto Sans Malayalam', Roboto, sans-serif;
+}
+
+.carouselImg {
+  width: 160px;
+  height: 240px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px #0002;
+}
+
+.carouselItemTitle {
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-bottom: 6px;
+  font-family: 'Noto Sans Malayalam', Roboto, sans-serif;
+  color: #296148;
+}
+
+.carouselDesc {
+  font-size: 0.95em;
+  color: #46523c;
+  margin-bottom: 10px;
+}
+
+.carouselLink {
+  color: #2b6e4f;
+  text-decoration: underline;
+  font-size: 1em;
+}
+
+.carouselNav {
+  margin-top: 16px;
+}
+
+.carouselBtn {
+  margin: 0 12px;
+  border: none;
+  background: #e7e1d7;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 1.3em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.carouselBtn:hover {
+  background: #d7c9b7;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: #f8f6f2;
+  border-radius: 18px;
+  box-shadow: 0 1px 4px #0001;
+  padding: 12px;
+  margin: 8px 0;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 4px 16px #0002;
+}
+
+.cardImg {
+  width: 120px;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px #0002;
+}
+
+.cardTitle {
+  font-family: 'Noto Sans Malayalam', Roboto, sans-serif;
+  font-weight: 600;
+  color: #296148;
+  margin-bottom: 4px;
+  font-size: 1.08em;
+}
+
+.cardDesc {
+  font-size: 0.95em;
+  color: #46523c;
+  margin-bottom: 8px;
+}
+
+.cardLink {
+  color: #b6572c;
+  text-decoration: underline;
+  font-size: 0.93em;
+}
+
+.seeMore {
+  text-align: right;
+  margin-top: 24px;
+}
+
+.seeMoreLink {
+  color: #2b6e4f;
+  font-weight: 500;
+  text-decoration: underline;
+  font-size: 1.1em;
+}
+
+@media (max-width: 600px) {
+  .carouselContainer {
+    max-width: 98vw;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
