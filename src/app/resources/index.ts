@@ -16,6 +16,7 @@ export {
   home,
   about,
   publications,
+  fav,
   blog,
   work,
   gallery,
