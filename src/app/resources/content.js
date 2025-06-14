@@ -708,6 +708,13 @@ const work = {
   // All projects will be listed on the /home and /work routes
 };
 
+const fav = {
+  path: "/fav",
+  label: "Favorites",
+  title: "Favorites – Vyshakh Vengilode",
+  description: "Vyshakh's favorite Malayalam movies, books, and TV shows",
+};
+
 const gallery = {
   path: "/gallery",
   label: "Gallery",
