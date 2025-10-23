@@ -1,59 +1,37 @@
-'use client';
+import { Column, Heading, Meta, Schema } from "@once-ui-system/core";
+import { baseURL, about, person, work } from "@/resources";
+import { Projects } from "@/components/work/Projects";
 
-export default function WorkPage() {
+export async function generateMetadata() {
+  return Meta.generate({
+    title: work.title,
+    description: work.description,
+    baseURL: baseURL,
+    image: `/api/og/generate?title=${encodeURIComponent(work.title)}`,
+    path: work.path,
+  });
+}
+
+export default function Work() {
   return (
-    <div
-      className="text-white flex flex-col items-center px-4 py-10"
-      style={{
-        width: '100vw',
-        height: '100vh',
-        boxSizing: 'border-box',
-        backgroundColor: 'transparent', 
-      }}
-    >
-      {/* Header */}
-      <h1 className="text-4xl font-extrabold text-center mb-2 tracking-tight">My Work</h1>
-      <p className="text-lg text-gray-300 text-center mb-8 max-w-xl">
-        This page will showcase projects and professional experience.
-      </p>
-      <p className="text-lg text-gray-300 text-center mb-8 max-w-xl">
-         You can view my portfolio blog by visiting{' '}
-      <a
-        href="https://artistrydesigndiaries.blogspot.com/" 
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ color: '#2367ff' }}
-      >
-        Artistry
-     </a>.
-    </p>
-
-      {/* Responsive iframe container */}
-      <div
-        style={{
-          width: '100%',
-          maxWidth: '1400px',
-          height: '100%',
-          maxHeight: '550px',
-          flex: 1,
-          overflow: 'auto',
-          boxSizing: 'border-box',
+    <Column maxWidth="m" paddingTop="24">
+      <Schema
+        as="webPage"
+        baseURL={baseURL}
+        path={work.path}
+        title={work.title}
+        description={work.description}
+        image={`/api/og/generate?title=${encodeURIComponent(work.title)}`}
+        author={{
+          name: person.name,
+          url: `${baseURL}${about.path}`,
+          image: `${baseURL}${person.avatar}`,
         }}
-      >
-        <iframe
-          src="https://artistrydesigndiaries.blogspot.com/"
-          title="Artistry Design Diaries"
-          loading="lazy"
-          allowFullScreen
-          style={{
-            width: '100%',
-            height: '100%',
-            border: 'none',
-            borderRadius: '12px',
-            boxShadow: '0 0 10px rgba(0,0,0,0.5)',
-          }}
-        />
-      </div>
-    </div>
+      />
+      <Heading marginBottom="l" variant="heading-strong-xl" align="center">
+        {work.title}
+      </Heading>
+      <Projects />
+    </Column>
   );
 }
