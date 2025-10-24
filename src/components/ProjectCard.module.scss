@@ -1,0 +1,39 @@
+/* Styles that make carousel images keep their natural aspect ratio
+   while constraining them to the container and giving rounded corners.
+   Using :global(img) ensures we target <img> elements rendered by the
+   third-party Carousel component even when using CSS modules.
+*/
+
+.carouselWrapper {
+  /* keep the carousel centered and allow it to size with content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* optional: constrain maximum height so very tall images don't overflow layout */
+  max-height: 600px;
+  overflow: hidden;
+}
+
+/* Target any <img> inside the wrapper (Carousel usually renders <img> for src/alt) */
+.carouselWrapper :global(img) {
+  /* allow image to use its natural dimensions but not overflow the container */
+  width: auto;          /* don't force full width */
+  height: auto;         /* respect aspect ratio */
+  max-width: 100%;      /* don't exceed container width */
+  max-height: 100%;     /* don't exceed wrapper height */
+  display: block;
+  border-radius: 12px;  /* rounded corners as requested; adjust as needed */
+  object-fit: contain;  /* preserve ratio and center image inside its box */
+  /* optionally add a subtle box-shadow or background to improve contrast */
+  background-color: transparent;
+}
+
+/* If carousel wraps images in other elements (like divs), also ensure those are centered */
+.carouselWrapper :global(.carousel-slide),
+.carouselWrapper :global(.slide),
+.carouselWrapper :global(.swiper-slide) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
