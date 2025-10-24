@@ -1,5 +1,7 @@
-import { Column, Heading, Meta, Schema } from "@once-ui-system/core";
-import { baseURL, about, person, work } from "@/resources";
+import { Column, Heading } from "@/once-ui/components";
+import { baseURL } from "@/app/resources";
+import { about, person, work } from "@/app/resources/content";
+import { Meta, Schema } from "@/once-ui/modules";
 import { Projects } from "@/components/work/Projects";
 
 export async function generateMetadata() {
@@ -35,3 +37,4 @@ export default function Work() {
     </Column>
   );
 }
+
