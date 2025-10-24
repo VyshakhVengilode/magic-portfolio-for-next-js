@@ -48,16 +48,13 @@ function createImage({ alt, src, ...props }: SmartImageProps & { src: string }) 
     console.error("SmartImage requires a valid 'src' property.");
     return null;
   }
-    // ✅ Use 4:5 aspect ratio for Apollo project images (as1–as9)
-  const isApolloImage = src.includes("/images/projects/project-01/as");
-  const aspect = isApolloImage ? "4 / 5" : "16 / 9";
   return (
     <SmartImage
       marginTop="8"
       marginBottom="16"
       enlarge
       radius="m"
-      aspectRatio={aspect}
+      aspectRatio="16 / 9"
       border="neutral-alpha-medium"
       sizes="(max-width: 960px) 100vw, 960px"
       alt={alt}
@@ -183,6 +180,7 @@ export function CustomMDX(props: CustomMDXProps) {
   );
 
 }
+
 
 
 
