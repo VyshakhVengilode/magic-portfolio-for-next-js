@@ -55,7 +55,7 @@ function createImage({ alt, src, ...props }: SmartImageProps & { src: string }) 
       marginBottom="16"
       enlarge
       radius="m"
-      aspectRatio="auto"
+      aspectRatio=""
       border="neutral-alpha-medium"
       sizes="(max-width: 960px) 100vw, 960px"
       alt={alt}
@@ -181,3 +181,4 @@ export function CustomMDX(props: CustomMDXProps) {
   );
 
 }
+
