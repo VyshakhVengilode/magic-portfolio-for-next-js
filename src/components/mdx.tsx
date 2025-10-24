@@ -55,7 +55,7 @@ function createImage({ alt, src, ...props }: SmartImageProps & { src: string }) 
       marginBottom="16"
       enlarge
       radius="m"
-      aspectRatio="16 / 9"
+      aspectRatio="auto"
       border="neutral-alpha-medium"
       sizes="(max-width: 960px) 100vw, 960px"
       alt={alt}
@@ -179,4 +179,5 @@ export function CustomMDX(props: CustomMDXProps) {
   return (
     <MDXRemote {...props} components={{ ...components, ...(props.components || {}) }} />
   );
+
 }
