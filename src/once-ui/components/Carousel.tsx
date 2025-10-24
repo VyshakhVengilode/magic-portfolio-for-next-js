@@ -24,6 +24,8 @@ const Carousel: React.FC<CarouselProps> = ({
   revealedByDefault = false,
   ...rest
 }) => {
+    // decide whether to actually apply aspectRatio to children
+  const shouldUseAspect = aspectRatio && aspectRatio !== "auto" && aspectRatio !== "none";
   const [activeIndex, setActiveIndex] = useState<number>(0);
   const [isTransitioning, setIsTransitioning] = useState(revealedByDefault);
   const [initialTransition, setInitialTransition] = useState(revealedByDefault);
@@ -84,7 +86,7 @@ const Carousel: React.FC<CarouselProps> = ({
         fillWidth
         trigger={isTransitioning}
         translateY="16"
-        aspectRatio={aspectRatio}
+        {...(shouldUseAspect ? { aspectRatio } : {})}  // only pass aspectRatio if requested
         speed="fast"
       >
         <SmartImage
@@ -93,7 +95,7 @@ const Carousel: React.FC<CarouselProps> = ({
           radius="l"
           border="neutral-alpha-weak"
           alt={images[activeIndex]?.alt}
-          aspectRatio={aspectRatio}
+          {...(shouldUseAspect ? { aspectRatio } : {})}  // only pass aspectRatio when needed
           src={images[activeIndex]?.src}
           style={{
             ...(images.length > 1 && {
@@ -160,3 +162,4 @@ const Carousel: React.FC<CarouselProps> = ({
 
 Carousel.displayName = "Carousel";
 export { Carousel };
+
