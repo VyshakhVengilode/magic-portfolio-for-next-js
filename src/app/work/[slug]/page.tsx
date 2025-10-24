@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { CustomMDX } from "@/components/mdx";
 import { getPosts } from "@/app/utils/utils";
-import { AvatarGroup, Button, Column, Flex, Heading, SmartImage, Text } from "@/once-ui/components";
+import { AvatarGroup, Button, Flex, Heading, SmartImage, Text } from "@/once-ui/components";
 import { baseURL } from "@/app/resources";
 import { about, person, work } from "@/app/resources/content";
 import { formatDate } from "@/app/utils/formatDate";
@@ -24,7 +24,7 @@ export async function generateMetadata({
   const routeParams = await params;
   const slugPath = Array.isArray(routeParams.slug) ? routeParams.slug.join('/') : routeParams.slug || '';
 
-  const posts = getPosts(["src", "app", "work", "projects"])
+  const posts = getPosts(["src", "app", "work", "projects"]);
   let post = posts.find((post) => post.slug === slugPath);
 
   if (!post) return {};
@@ -39,7 +39,7 @@ export async function generateMetadata({
 }
 
 export default async function Project({
-  params
+  params,
 }: { params: Promise<{ slug: string | string[] }> }) {
   const routeParams = await params;
   const slugPath = Array.isArray(routeParams.slug) ? routeParams.slug.join('/') : routeParams.slug || '';
@@ -56,7 +56,7 @@ export default async function Project({
     })) || [];
 
   return (
-    <Column as="section" maxWidth="m" horizontal="center" gap="l">
+    <div style={{ maxWidth: "960px", margin: "0 auto", display: "flex", flexDirection: "column", gap: "24px" }}>
       <Schema
         as="blogPosting"
         baseURL={baseURL}
@@ -72,21 +72,21 @@ export default async function Project({
           image: `${baseURL}${person.avatar}`,
         }}
       />
-      <Column maxWidth="xs" gap="16">
+      <div style={{ maxWidth: "480px", display: "flex", flexDirection: "column", gap: "16px" }}>
         <Button data-border="rounded" href="/work" variant="tertiary" weight="default" size="s" prefixIcon="chevronLeft">
           Projects
         </Button>
         <Heading variant="display-strong-s">{post.metadata.title}</Heading>
-      </Column>
-      {        <SmartImage
+      </div>
+      {post.metadata.images.length > 0 && (
+        <SmartImage
           priority
           radius="m"
           alt="image"
           src={post.metadata.images[0]}
-        />post.metadata.images.length > 0 && (
-
+        />
       )}
-      <Column style={{ margin: "auto" }} as="article" maxWidth="xs">
+      <div style={{ margin: "auto", maxWidth: "480px" }}>
         <Flex gap="12" marginBottom="24" vertical="center">
           {post.metadata.team && <AvatarGroup reverse avatars={avatars} size="m" />}
           <Text variant="body-default-s" onBackground="neutral-weak">
@@ -94,14 +94,8 @@ export default async function Project({
           </Text>
         </Flex>
         <CustomMDX source={post.content} />
-      </Column>
+      </div>
       <ScrollToHash />
-    </Column>
+    </div>
   );
 }
-
-
-
-
-
-
