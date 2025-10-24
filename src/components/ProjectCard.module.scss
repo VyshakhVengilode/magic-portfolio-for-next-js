@@ -1,39 +1,65 @@
-/* Styles that make carousel images keep their natural aspect ratio
-   while constraining them to the container and giving rounded corners.
-   Using :global(img) ensures we target <img> elements rendered by the
-   third-party Carousel component even when using CSS modules.
+/* Ensure vertical images keep their natural ratio and do not get cropped.
+   We use :global selectors to override the Carousel's internal styles (various carousel implementations).
+   Key ideas:
+   - Do NOT force img width:100% (that stretches/tall -> horizontal look).
+   - Center images inside slides and allow their height to grow up to a sensible limit (max-height).
+   - Use object-fit: contain so images are fully visible and rounded corners are preserved.
+   - Use !important to override third-party fixed sizing when necessary.
 */
 
 .carouselWrapper {
-  /* keep the carousel centered and allow it to size with content */
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  /* optional: constrain maximum height so very tall images don't overflow layout */
-  max-height: 600px;
+  /* don't force a fixed height here; allow image to define height up to max-height */
+  max-height: 80vh; /* adjust as needed so very tall images don't overflow the viewport */
   overflow: hidden;
 }
 
-/* Target any <img> inside the wrapper (Carousel usually renders <img> for src/alt) */
-.carouselWrapper :global(img) {
-  /* allow image to use its natural dimensions but not overflow the container */
-  width: auto;          /* don't force full width */
-  height: auto;         /* respect aspect ratio */
-  max-width: 100%;      /* don't exceed container width */
-  max-height: 100%;     /* don't exceed wrapper height */
-  display: block;
-  border-radius: 12px;  /* rounded corners as requested; adjust as needed */
-  object-fit: contain;  /* preserve ratio and center image inside its box */
-  /* optionally add a subtle box-shadow or background to improve contrast */
-  background-color: transparent;
+/* Override common carousel root containers if they set fixed heights */
+.carouselWrapper :global(.carousel),
+.carouselWrapper :global(.carousel-root),
+.carouselWrapper :global(.swiper),
+.carouselWrapper :global(.slick-slider) {
+  width: 100%;
+  height: auto !important;
 }
 
-/* If carousel wraps images in other elements (like divs), also ensure those are centered */
+/* Ensure slide wrappers center their content and don't clip images */
 .carouselWrapper :global(.carousel-slide),
 .carouselWrapper :global(.slide),
-.carouselWrapper :global(.swiper-slide) {
+.carouselWrapper :global(.swiper-slide),
+.carouselWrapper :global(.slick-slide),
+.carouselWrapper :global(.carousel__slide) {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: auto !important;
+  overflow: visible !important;
+  padding: 0;
+}
+
+/* Target any <img> inside the wrapper (Carousel likely renders <img> elements) */
+.carouselWrapper :global(img) {
+  /* Let the image keep its intrinsic ratio */
+  width: auto !important;        /* don't force full width */
+  height: auto !important;       /* don't force a fixed height */
+  max-width: 100% !important;    /* don't overflow horizontally */
+  max-height: 80vh !important;   /* cap height so it doesn't overflow viewport; adjust if needed */
+  object-fit: contain !important;/* preserve aspect ratio and show whole image */
+  display: block;
+  border-radius: 12px;           /* round corners */
+  background-color: transparent;
+}
+
+/* If the carousel wraps images in background-image on divs, target those too (fallback) */
+.carouselWrapper :global(.carousel-slide > div),
+.carouselWrapper :global(.slide > div),
+.carouselWrapper :global(.swiper-slide > div) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: auto !important;
 }
