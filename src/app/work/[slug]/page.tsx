@@ -94,12 +94,13 @@ export default async function Project({
             {post.metadata.publishedAt && formatDate(post.metadata.publishedAt)}
           </Text>
         </Flex>
-        <CustomMDX source={post.content} />
+        <CustomMDX source={post.content} imageAspectRatio={slugPath === "apollo-socialmedia" ? "4 / 5" : "16 / 9"} />
       </Column>
       <ScrollToHash />
     </Column>
   );
 }
+
 
 
 
