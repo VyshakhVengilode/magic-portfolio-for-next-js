@@ -36,6 +36,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       {/* wrapper ensures we can scope styles to the carousel and override any fixed sizing */}
       <div className={styles.carouselWrapper}>
         <Carousel
+          aspectRatio="auto"        // tell Carousel to not force 16/9
           sizes="(max-width: 960px) 100vw, 960px"
           images={images.map((image) => ({
             src: image,
@@ -93,3 +94,4 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
     </Column>
   );
 };
+
