@@ -78,14 +78,13 @@ export default async function Project({
         </Button>
         <Heading variant="display-strong-s">{post.metadata.title}</Heading>
       </Column>
-      {post.metadata.images.length > 0 && (
-        <SmartImage
+      {        <SmartImage
           priority
-          aspectRatio="16 / 9"
           radius="m"
           alt="image"
           src={post.metadata.images[0]}
-        />
+        />post.metadata.images.length > 0 && (
+
       )}
       <Column style={{ margin: "auto" }} as="article" maxWidth="xs">
         <Flex gap="12" marginBottom="24" vertical="center">
@@ -100,6 +99,7 @@ export default async function Project({
     </Column>
   );
 }
+
 
 
 
