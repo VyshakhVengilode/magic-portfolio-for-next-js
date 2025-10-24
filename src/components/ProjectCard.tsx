@@ -33,7 +33,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <Column fillWidth gap="m">
-      {/* wrapper ensures we can scope styles to the carousel images */}
+      {/* wrapper ensures we can scope styles to the carousel and override any fixed sizing */}
       <div className={styles.carouselWrapper}>
         <Carousel
           sizes="(max-width: 960px) 100vw, 960px"
