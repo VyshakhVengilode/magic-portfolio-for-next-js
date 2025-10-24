@@ -9,7 +9,6 @@ import {
   SmartLink,
   Text,
 } from "@/once-ui/components";
-import styles from "./ProjectCard.module.scss";
 
 interface ProjectCardProps {
   href: string;
@@ -33,18 +32,13 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <Column fillWidth gap="m">
-      {/* wrapper ensures we can scope styles to the carousel and override any fixed sizing */}
-      <div className={styles.carouselWrapper}>
-        <Carousel
-          aspectRatio="auto"        // tell Carousel to not force 16/9
-          sizes="(max-width: 960px) 100vw, 960px"
-          images={images.map((image) => ({
-            src: image,
-            alt: title,
-          }))}
-        />
-      </div>
-
+      <Carousel
+        sizes="(max-width: 960px) 100vw, 960px"
+        images={images.map((image) => ({
+          src: image,
+          alt: title,
+        }))}
+      />
       <Flex
         mobileDirection="column"
         fillWidth
@@ -94,4 +88,3 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
     </Column>
   );
 };
-
