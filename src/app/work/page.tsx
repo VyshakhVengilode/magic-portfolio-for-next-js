@@ -17,6 +17,8 @@ export async function generateMetadata() {
 export default function Work() {
   return (
     <Column maxWidth="m" paddingTop="24">
+
+      {/* Page metadata */}
       <Schema
         as="webPage"
         baseURL={baseURL}
@@ -30,10 +32,25 @@ export default function Work() {
           image: `${baseURL}${person.avatar}`,
         }}
       />
-      <Heading marginBottom="l" variant="heading-strong-xl" align="center">
+
+      {/* Work page heading */}
+      <Heading
+        marginBottom="l"
+        variant="heading-strong-xl"
+        align="center"
+      >
         {work.title}
       </Heading>
-      <Projects />
+
+      {/* Graphic Designer visual - first */}
+      <Projects range={[2, 2]} />
+
+      {/* Muse Arena 2K26 - second */}
+      <Projects range={[1, 1]} />
+
+      {/* Cognitive Lens and remaining projects */}
+      <Projects range={[3]} />
+
     </Column>
   );
 }
