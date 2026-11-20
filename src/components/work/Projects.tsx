@@ -10,6 +10,10 @@ export function Projects({ range, pageSize = 6 }: ProjectsProps) {
   const allProjects = getPosts(["src", "app", "work", "projects"]);
 
   const sortedProjects = allProjects.sort((a, b) => {
+    // Explicitly featured projects appear first on both the homepage and Works page.
+    const featuredDifference = Number(Boolean(b.metadata.featured)) - Number(Boolean(a.metadata.featured));
+    if (featuredDifference !== 0) return featuredDifference;
+
     return new Date(b.metadata.publishedAt).getTime() - new Date(a.metadata.publishedAt).getTime();
   });
 
