@@ -75,6 +75,7 @@ export default function Home() {
         <Projects range={[2, 2]} />
       </RevealFx>
 
+      {/* Homepage metadata */}
       <Schema
         as="webPage"
         baseURL={baseURL}
@@ -285,10 +286,10 @@ export default function Home() {
 
       {/* Featured Work - Muse Arena 2K26 */}
       <RevealFx translateY="16" delay={0.3}>
-        <Projects range={[1, 1]} />
+        <Projects only={["muse-arena-2k26"]} />
       </RevealFx>
 
-      {/* Cognitive Lens and all remaining projects */}
+      {/* Cognitive Lens and remaining projects */}
       <Projects range={[3]} />
 
       {/* Newsletter */}
