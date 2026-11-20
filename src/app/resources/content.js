@@ -14,7 +14,7 @@ const person = {
   languages: ["English", "Malayalam"], // optional: Leave the array empty if you don't want to display languages
 };
 const NewsletterTitle = () => (
-  <>Subscribe to {person.firstName}'s Newsletter</>
+  <>Subscribe to {person.firstName}&apos;s Newsletter</>
 );
 
 const NewsletterDescription = () => (
@@ -61,7 +61,7 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Vyshakh Vengilode's Portfolio</>,
+  headline: <>Vyshakh Vengilode&apos;s Portfolio</>,
   featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">Naari</strong></>,
@@ -246,7 +246,7 @@ const about = {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                The world of science is ready to see the star world 'explode' - നക്ഷത്ര ലോകത്തെ ‘പൊട്ടിത്തെറി’ കാണാനൊരുങ്ങി ശാസ്ത്രലോകം.
+                The world of science is ready to see the star world &apos;explode&apos; - നക്ഷത്ര ലോകത്തെ ‘പൊട്ടിത്തെറി’ കാണാനൊരുങ്ങി ശാസ്ത്രലോകം.
               </a>
             ),
           },
@@ -300,7 +300,7 @@ const about = {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                'Love' is the great revolution of change - 'പ്രണയം' മാറ്റത്തിന്റെ മഹാവിപ്ലവം.
+                &apos;Love&apos; is the great revolution of change - &apos;പ്രണയം&apos; മാറ്റത്തിന്റെ മഹാവിപ്ലവം.
               </a>
             ),
           },
@@ -311,7 +311,7 @@ const about = {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                A Changing Generation's shift is Not a Doom - മാറുന്ന തലമുറയുടെ മാറ്റം നാശത്തിലേക്കല്ല.
+                A Changing Generation&apos;s shift is Not a Doom - മാറുന്ന തലമുറയുടെ മാറ്റം നാശത്തിലേക്കല്ല.
               </a>
             ),
           },
@@ -322,7 +322,7 @@ const about = {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                An Atheist's World - ഒരു അവിശ്വാസിയുടെ ലോകം.
+                An Atheist&apos;s World - ഒരു അവിശ്വാസിയുടെ ലോകം.
               </a>
             ),
           },
@@ -398,7 +398,7 @@ const about = {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                'Love' is the great revolution of change - 'പ്രണയം' മാറ്റത്തിന്റെ മഹാവിപ്ലവം.
+                &apos;Love&apos; is the great revolution of change - &apos;പ്രണയം&apos; മാറ്റത്തിന്റെ മഹാവിപ്ലവം.
               </a>
             ),
           },
@@ -420,7 +420,7 @@ const about = {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                The politics and the apolitics - രാഷ്ട്രീയവും 'അരാഷ്ട്രീയ' വാദവും
+                The politics and the apolitics - രാഷ്ട്രീയവും &apos;അരാഷ്ട്രീയ&apos; വാദവുംം
               </a>
             ),
           },
