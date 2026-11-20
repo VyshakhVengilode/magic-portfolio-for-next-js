@@ -52,12 +52,7 @@ export async function generateMetadata({ params }: { params?: any }): Promise<Me
 export default function Home() {
   return (
     <Column maxWidth="m" gap="0" horizontal="center">
-{/* Portfolio slider - immediately below header */}
-<RevealFx translateY="16" delay={0.3}>
-  <Projects range={[2, 2]} />
-</RevealFx>
 
-{/* Featured work - Muse Arena 2K26 */}
 <RevealFx translateY="16" delay={0.45}>
   <Projects range={[1, 1]} />
 </RevealFx>
@@ -213,7 +208,12 @@ export default function Home() {
           </Flex>
         </Flex>
       )}
-      <Projects range={[3]} />
+{/* Featured project - Muse Arena 2K26 */}
+<RevealFx translateY="16" delay={0.3}>
+  <Projects range={[1, 1]} />
+</RevealFx>
+{/* Remaining projects */}
+<Projects range={[2]} />
       {newsletter.display && <Mailchimp newsletter={newsletter} />}
     </Column>
   );
