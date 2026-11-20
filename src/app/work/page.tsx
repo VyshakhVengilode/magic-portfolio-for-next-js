@@ -46,7 +46,7 @@ export default function Work() {
       <Projects range={[2, 2]} />
 
       {/* Muse Arena 2K26 - second */}
-      <Projects range={[1, 1]} />
+      <Projects only={["muse-arena-2k26"]} />
 
       {/* Cognitive Lens and remaining projects */}
       <Projects range={[3]} />
